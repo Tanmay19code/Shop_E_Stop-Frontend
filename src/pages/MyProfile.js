@@ -12,6 +12,7 @@ function MyProfile() {
           <ProfileDetails content="Tanmay Mutalik"/>
           <ProfileDetails/>
           <ProfileDetails/>
+          <ProfileDetails/>
       </div>
     </div>
   );
