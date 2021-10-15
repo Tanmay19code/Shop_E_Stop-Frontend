@@ -518,7 +518,7 @@ MY PROFILE
 .profile-details {
     background-color: #C4C4C480;
     border: 1px solid #858585;
-    border-radius:3px;
+    border-radius: 3px;
     width: fit-content;
     height: fit-content;
     padding-left: 5px;
@@ -527,17 +527,125 @@ MY PROFILE
     padding-bottom: 2px;
     margin: 5px;
     font-family: 'Lateef', cursive;
-    font-size: 25px;
-    /*  */
+    font-size: 20px;
+    max-width: 200px;
 }
 
-/***********************/
+.profile-holder-item {
+    display: flex;
+    /* align-items: center;
+    text-align: center; */
+}
 
-/***********************/
+.profile-holder-list {
+    margin-top: 20px;
+}
 
-/***********************/
+#profile-item-title {
+    font-family: 'Kreon', serif;
+    font-size: 15px;
+    font-weight: 800;
+    width: 70px;
+    text-align: left;
+    padding-top: 11px;
+}
 
-/***********************/
+.profile-holder-header {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.profile-holder-header:hover {
+    cursor: pointer;
+}
+
+.profile-address-button a button {
+    margin: 0 10px 10px 10px;
+    background-color: #FFF72CBA;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.profile-address-button a button:hover {
+    cursor: pointer;
+}
+
+.add-address-holder {
+    background-color: #fff;
+    border-radius: 5px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #000;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+#address-type-heading {
+    font-size: 'Kreon', serif;
+    font-size: 18px;
+    font-weight: bold;
+    width: fit-content;
+}
+
+.add-address-holder-item {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px 0 20px 0;
+}
+
+.input-line-1-4 {
+    width: 30%;
+    border: 1px solid #282828;
+    border-radius: 3px;
+    height: 25px;
+    padding: 0 4px 0 4px;
+}
+
+.input-line-2-3 {
+    width: 96%;
+    border: 1px solid #282828;
+    border-radius: 3px;
+    height: 25px;
+    padding: 0 4px 0 4px;
+}
+
+#address-type-input {
+    width: 130px;
+    border: 1px solid #282828;
+    border-radius: 3px;
+    margin: 0 0 0 20px;
+    background-color: #C4C4C49D;
+    padding: 0 4px 0 4px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+#add-address button {
+    margin: 0 10px 10px 10%;
+    background-color: #FFF72CBA;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    font-weight: bold
+}
+
+#add-address button:hover {
+    cursor: pointer;
+}
+
+/**********************************/
+
+/******  min-width :425px  ********/
+
+/**********************************/
 
 @media (min-width :425px) {
     .cart-item-image img {
@@ -583,7 +691,16 @@ MY PROFILE
     #payment-price {
         font-size: 20px;
     }
+    .profile-details{
+        max-width: 300px;
+    }
 }
+
+/**********************************/
+
+/******  min-width :768px  ********/
+
+/**********************************/
 
 @media (min-width :768px) {
     .page-container {
@@ -753,7 +870,23 @@ MY PROFILE
     #cart-payment {
         width: 100%;
     }
+    #profile-item-title{
+        font-size:25px;
+        width: 130px;
+    }
+    .profile-details{
+        font-size: 30px;
+    }
+    .profile-address-button a button{
+        margin-left: 50px;
+    }
 }
+
+/**********************************/
+
+/******  min-width :1024px  *******/
+
+/**********************************/
 
 @media (min-width :1024px) {
     .carousel-image {
@@ -798,5 +931,28 @@ MY PROFILE
     }
     #payment-price {
         font-size: 24px;
+    }
+    .input-line-2-3 {
+        width: 95%;
+        height: 50px;
+        font-size: 20px;
+    }
+    .input-line-1-4 {
+        height: 50px;
+        font-size: 20px;
+    }
+    .add-address-holder{
+        margin-top: 150px;
+    }
+    #add-address-holder-item-left{
+        justify-content: center;
+    }
+    #add-address{
+        float: right;
+        padding-right: 70px;
+        font-size: 50px;
+    }
+    #add-address button {
+        font-size: 20px;
     }
 }

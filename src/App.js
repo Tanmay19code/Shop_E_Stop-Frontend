@@ -4,21 +4,25 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Homepage from "./pages/Homepage";
 import MyCart from "./pages/MyCart";
 import MyProfile from "./pages/MyProfile";
+import AddAddress from "./pages/AddAddress";
 
 function App() {
   return (
     <>
       <Router>
-        <Navbar trial=""/>
+        <Navbar trial="" />
         <Switch>
           <Route exact path="/">
             <Homepage />
           </Route>
           <Route exact path="/cart">
-            <MyCart/>
+            <MyCart />
           </Route>
           <Route exact path="/myprofile">
-            <MyProfile/>
+            <MyProfile />
+          </Route>
+          <Route exact path="/addaddress">
+            <AddAddress />
           </Route>
         </Switch>
       </Router>
