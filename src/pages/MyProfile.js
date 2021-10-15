@@ -13,6 +13,8 @@ function MyProfile() {
           <ProfileDetails/>
           <ProfileDetails/>
           <ProfileDetails/>
+          <ProfileDetails/>
+          <ProfileDetails/>
       </div>
     </div>
   );
