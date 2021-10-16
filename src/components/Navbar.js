@@ -5,6 +5,7 @@ import { AiOutlineUser } from "react-icons/ai";
 import { IoIosSearch } from "react-icons/io";
 import { BiCategory } from "react-icons/bi";
 import { Link } from "react-router-dom";
+import OutsideClickHandler from "react-outside-click-handler";
 
 function Navbar() {
   const [menuEnabled, setMenuEnabled] = useState(false);
@@ -53,42 +54,44 @@ function Navbar() {
             menuEnabled ? "enabled" : "disabled"
           }`}
         >
-          <ul>
-            <li>
-              <div className="navbar-profile-menu-header">
-                <div>
-                  <ul>
-                    <li id="username">Tanmay M.</li>
-                    <li id="useremail">tanmaymutalik2002@gmail.com</li>
-                  </ul>
+          <OutsideClickHandler onOutsideClick={disableMenu}>
+            <ul>
+              <li>
+                <div className="navbar-profile-menu-header">
+                  <div>
+                    <ul>
+                      <li id="username">Tanmay M.</li>
+                      <li id="useremail">tanmaymutalik2002@gmail.com</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <AiOutlineUser
+                      onClick={toggleMenu}
+                      id="menu_user"
+                      className="user"
+                    />
+                  </div>
                 </div>
-                <div>
-                  <AiOutlineUser
-                    onClick={toggleMenu}
-                    id="menu_user"
-                    className="user"
-                  />
-                </div>
-              </div>
-            </li>
-            <li>
-              <Link to="myprofile" onClick={disableMenu}>
-                <div className="navbar-profile-menu-item">
-                  <p>My Profile</p>
-                </div>
-              </Link>
-              <Link to="myorders" onClick={disableMenu}>
-                <div className="navbar-profile-menu-item">
-                  <p>My Orders</p>
-                </div>
-              </Link>
-              <Link to="mycoupons" onClick={disableMenu}>
-                <div className="navbar-profile-menu-item">
-                  <p>My Coupons</p>
-                </div>
-              </Link>
-            </li>
-          </ul>
+              </li>
+              <li>
+                <Link to="myprofile" onClick={disableMenu}>
+                  <div className="navbar-profile-menu-item">
+                    <p>My Profile</p>
+                  </div>
+                </Link>
+                <Link to="myorders" onClick={disableMenu}>
+                  <div className="navbar-profile-menu-item">
+                    <p>My Orders</p>
+                  </div>
+                </Link>
+                <Link to="mycoupons" onClick={disableMenu}>
+                  <div className="navbar-profile-menu-item">
+                    <p>My Coupons</p>
+                  </div>
+                </Link>
+              </li>
+            </ul>
+          </OutsideClickHandler>
         </div>
       </div>
     </div>

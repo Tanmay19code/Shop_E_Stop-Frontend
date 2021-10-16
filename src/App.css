@@ -674,15 +674,18 @@ MY ORDER
     margin: 30px auto 30px auto;
     display: flex;
 }
-.order-list-image{
+
+.order-list-image {
     margin-right: 10px;
 }
+
 .order-list-image img {
     aspect-ratio: 1;
     width: 70px;
     height: unset;
     margin: 10px 0 auto 0;
 }
+
 .order-delivery-status {
     font-size: 12px;
     color: rgb(0, 0, 0);
@@ -693,22 +696,76 @@ MY ORDER
     font-weight: bold;
     margin-top: 5px;
 }
-#delivered{
+
+#delivered {
     background-color: rgba(0, 255, 0, 0.548);
 }
-#pending{
+
+#pending {
     background-color: #FFF72CBA;
 }
-#cancelled{
+
+#cancelled {
     background-color: #FF5858;
 }
 
-#order-list-header{
+#order-list-header {
     font-family: 'Kreon', serif;
     font-size: 20px;
     font-weight: bold;
 }
 
+/****************************
+MY COUPONS
+****************************/
+
+.coupon-body {
+    background-color: #E5E5E5;
+    width: 250px;
+    border: 1px solid rgba(0, 0, 0, 0.267);
+    border-radius: 3px;
+    margin: 10px;
+}
+
+.coupon-title {
+    text-align: center;
+}
+#valid{
+    color: #4200FFE6;
+}
+#expired{
+    color: #00000080;
+}
+.coupon-body ul{
+    margin-left: 25px;
+}
+.validity{
+    font-family: 'Kreon',serif;
+    text-align: right;
+    margin: 5px 5px 2px 0;
+}
+.validity strong{
+    color: #f00;
+}
+.coupon-holder{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.coupon-header{
+    margin: 20px 20px 20px 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+.coupon-code{
+    display: flex;
+    justify-content: flex-end;
+    margin-top:10px;
+    margin-right: 5px;
+}
+#coupon-code-value:hover{
+    cursor: pointer;
+}
 /**********************************/
 
 /******  min-width :425px  ********/
@@ -762,20 +819,20 @@ MY ORDER
     .profile-details {
         max-width: 300px;
     }
-    .order-searchbar{
-        width:250px;
+    .order-searchbar {
+        width: 250px;
     }
-    .order-list-image img{
-        width:100px;
+    .order-list-image img {
+        width: 100px;
     }
-    #order-list-header{
+    #order-list-header {
         font-size: 25px;
     }
-    #order-list-price{
-        font-size:20px;
+    #order-list-price {
+        font-size: 20px;
     }
-    .order-delivery-status{
-        font-size:15px;
+    .order-delivery-status {
+        font-size: 15px;
     }
 }
 
@@ -963,25 +1020,25 @@ MY ORDER
     .profile-address-button a button {
         margin-left: 50px;
     }
-    .order-searchbar{
-        width:450px;
+    .order-searchbar {
+        width: 450px;
         margin-right: 10px;
     }
-    .order-searchbar input{
+    .order-searchbar input {
         height: 25px;
         font-size: 18px;
     }
-    .order-list-image img{
-        width:150px;
+    .order-list-image img {
+        width: 150px;
     }
-    #order-list-header{
+    #order-list-header {
         font-size: 35px;
     }
-    #order-list-price{
-        font-size:25px;
+    #order-list-price {
+        font-size: 25px;
     }
-    .order-delivery-status{
-        font-size:20px;
+    .order-delivery-status {
+        font-size: 20px;
     }
 }
 
@@ -1073,20 +1130,20 @@ MY ORDER
     .profile-holder-header {
         font-size: 25px;
     }
-    .order-searchbar{
-        width:550px;
+    .order-searchbar {
+        width: 550px;
         margin-right: 10px;
     }
-    .order-list-image img{
-        width:200px;
+    .order-list-image img {
+        width: 200px;
     }
-    #order-list-header{
+    #order-list-header {
         font-size: 45px;
     }
-    #order-list-price{
-        font-size:35px;
+    #order-list-price {
+        font-size: 35px;
     }
-    .order-delivery-status{
-        font-size:20px;
+    .order-delivery-status {
+        font-size: 20px;
     }
 }
