@@ -4,9 +4,12 @@ function AddAddress() {
   return (
     <div className="page-container">
       <div className="add-address-holder">
-        <div className="add-address-holder-item" id="add-address-holder-item-left">
+        <div
+          className="add-address-holder-item"
+          id="add-address-holder-item-left"
+        >
           <p id="address-type-heading">Address Type :</p>
-          <input autocomplete="abcdef" type="title" id="address-type-input"/>
+          <input autocomplete="abcdef" type="title" id="address-type-input" />
         </div>
         <div className="add-address-holder-item">
           <input
@@ -27,14 +30,14 @@ function AddAddress() {
         </div>
         <div className="add-address-holder-item">
           <input
-            type="text"
+            type="address"
             placeholder="Flat no., Building name, Street"
             className="input-line-2-3"
           />
         </div>
         <div className="add-address-holder-item">
           <input
-            type="text"
+            type="address"
             placeholder="Locality, Area, town /taluka /village"
             className="input-line-2-3"
           />

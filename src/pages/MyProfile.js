@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import ProfileDetails from "../components/ProfileDetails";
 import { Link } from "react-router-dom";
+import { RiArrowDownSLine } from "react-icons/ri";
+import { RiArrowUpSLine } from "react-icons/ri";
 
 function MyProfile() {
   const [disabled, setDisabled] = useState(false);
@@ -22,7 +24,12 @@ function MyProfile() {
         </div>
         <div className="profile-holder">
           <p onClick={toggleVisibility} className="profile-holder-header">
-            Home ▼
+            Home{" "}
+            {disabled ? (
+              <RiArrowDownSLine id="arrow-icon" />
+            ) : (
+              <RiArrowUpSLine />
+            )}
           </p>
           <div className={`${disabled ? "disabled" : "profile-holder-list"}`}>
             <div className="profile-holder-item">

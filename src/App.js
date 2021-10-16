@@ -5,6 +5,7 @@ import Homepage from "./pages/Homepage";
 import MyCart from "./pages/MyCart";
 import MyProfile from "./pages/MyProfile";
 import AddAddress from "./pages/AddAddress";
+import MyOrders from "./pages/MyOrders";
 
 function App() {
   return (
@@ -23,6 +24,9 @@ function App() {
           </Route>
           <Route exact path="/addaddress">
             <AddAddress />
+          </Route>
+          <Route exact path="/myorders">
+            <MyOrders />
           </Route>
         </Switch>
       </Router>
