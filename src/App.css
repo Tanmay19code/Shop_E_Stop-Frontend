@@ -259,7 +259,29 @@ hr {
     margin-bottom: 5px;
     text-align: center;
 }
-
+.category-body{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    z-index: 3;
+    border: 1px solid #000;
+    background-color: #fff;
+    padding: 5px;
+    box-shadow: 0 0 4px #000;
+    border-radius: 4px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.category-item{
+    border-radius: 3px;
+    box-shadow: 0 1px 3px #000;
+    justify-content: center;
+}
+.category-item img{
+    width: 50px;
+    height: 50px;
+}
 /****************
 Carousel
 *****************/

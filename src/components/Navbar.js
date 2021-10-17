@@ -6,6 +6,7 @@ import { IoIosSearch } from "react-icons/io";
 import { BiCategory } from "react-icons/bi";
 import { Link } from "react-router-dom";
 import OutsideClickHandler from "react-outside-click-handler";
+import Category from "./Category";
 
 function Navbar() {
   const [menuEnabled, setMenuEnabled] = useState(false);
@@ -22,6 +23,18 @@ function Navbar() {
     }
   };
 
+  const [categoryVisible, setCategoryVisible] = useState(false)
+  const toggleCategory = () => {
+    if (categoryVisible) {
+      setCategoryVisible(false)
+    }
+    else{
+      setCategoryVisible(true)
+    }
+  }
+  const disableCategory = () => {
+    setCategoryVisible(false)
+  }
   return (
     <div>
       <div className="navbar">
@@ -30,7 +43,7 @@ function Navbar() {
         </Link>
         <ul className="navbar-ul">
           <li>
-            <BiCategory className="category" />
+            <BiCategory className="category" onClick={toggleCategory}/>
           </li>
           <li>
             <Link to="/cart" onClick={disableMenu}>
@@ -94,6 +107,7 @@ function Navbar() {
           </OutsideClickHandler>
         </div>
       </div>
+      {categoryVisible?<Category/>:<></>}
     </div>
   );
 }
