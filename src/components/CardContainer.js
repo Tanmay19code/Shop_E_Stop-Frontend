@@ -1,5 +1,6 @@
 import React from "react";
 import Card from "./Card";
+import { Link } from "react-router-dom";
 
 function CardContainer(props) {
   return (
@@ -8,7 +9,9 @@ function CardContainer(props) {
         <div className="card-container-title">{props.title}</div>
         <hr />
         <div className="card-container-cards">
-          <Card />
+          <Link to="/product">
+            <Card />
+          </Link>
           <Card />
           <Card />
           <Card />

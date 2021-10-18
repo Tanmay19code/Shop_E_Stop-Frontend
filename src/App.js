@@ -7,6 +7,7 @@ import MyProfile from "./pages/MyProfile";
 import AddAddress from "./pages/AddAddress";
 import MyOrders from "./pages/MyOrders";
 import MyCoupons from "./pages/MyCoupons";
+import ProductPage from "./pages/ProductPage";
 
 function App() {
   return (
@@ -31,6 +32,9 @@ function App() {
           </Route>
           <Route exact path="/mycoupons">
             <MyCoupons />
+          </Route>
+          <Route exact path="/product">
+            <ProductPage />
           </Route>
         </Switch>
       </Router>

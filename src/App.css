@@ -259,8 +259,13 @@ hr {
     margin-bottom: 5px;
     text-align: center;
 }
-.category-body{
-    position: absolute;
+
+/****************************
+CATEGORY
+****************************/
+
+.category-body {
+    position: fixed;
     top: 40%;
     left: 40%;
     z-index: 3;
@@ -273,15 +278,18 @@ hr {
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
-.category-item{
+
+.category-item {
     border-radius: 3px;
     box-shadow: 0 1px 3px #000;
     justify-content: center;
 }
-.category-item img{
+
+.category-item img {
     width: 50px;
     height: 50px;
 }
+
 /****************
 Carousel
 *****************/
@@ -752,42 +760,188 @@ MY COUPONS
 .coupon-title {
     text-align: center;
 }
-#valid{
+
+#valid {
     color: #4200FFE6;
 }
-#expired{
+
+#expired {
     color: #00000080;
 }
-.coupon-body ul{
+
+.coupon-body ul {
     margin-left: 25px;
 }
-.validity{
-    font-family: 'Kreon',serif;
+
+.validity {
+    font-family: 'Kreon', serif;
     text-align: right;
     margin: 5px 5px 2px 0;
 }
-.validity strong{
+
+.validity strong {
     color: #f00;
 }
-.coupon-holder{
+
+.coupon-holder {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
-.coupon-header{
+
+.coupon-header {
     margin: 20px 20px 20px 20px;
     font-family: 'Times New Roman', Times, serif;
     font-size: 25px;
 }
-.coupon-code{
+
+.coupon-code {
     display: flex;
     justify-content: flex-end;
-    margin-top:10px;
+    margin-top: 10px;
     margin-right: 5px;
 }
-#coupon-code-value:hover{
+
+#coupon-code-value:hover {
     cursor: pointer;
 }
+
+/****************************
+Product Page
+****************************/
+
+.product-header {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.product-image-div img {
+    /* aspect-ratio:1; */
+    width: 120px;
+    height: unset;
+}
+
+.product-image-div p {
+    font-family: 'Kreon', serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.product-title {
+    display: flex;
+}
+
+#product-info-heading {
+    font-family: 'Arapey', serif;
+    font-weight: 700;
+    font-size: 23px;
+}
+
+.rating {
+    background-color: #C4C4C4;
+    display: flex;
+    border-radius: 3px;
+    height: fit-content;
+    padding: 2px 2px 2px 1px;
+    margin: 4px 0 0 4px;
+}
+
+.rating svg {
+    color: #FFD700;
+}
+
+.rating p {
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.product-title-description ul {
+    list-style: none;
+    margin-left: 2px;
+}
+
+.product-title-description ul li {
+    font-size: 15px;
+    font-family: 'Arapey', serif;
+}
+
+.product-title-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+
+#add-to-cart-button {
+    background-color: #fff82cba;
+    border: 1px solid #000;
+    border-radius: 3px;
+    padding: 1px;
+}
+
+#buy-button {
+    background-color: #A4FF6C;
+    border: 1px solid #000;
+    border-radius: 3px;
+    padding: 1px;
+}
+
+.product-expected-delivery {
+    margin: 20px 0 0 0;
+}
+
+#product-details-header {
+    color: #694B4B;
+    font-family: 'Kreon', serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0 0 0 5px;
+}
+
+#product-details-delivery {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 15px 0 15px 5px;
+}
+
+.product-details-description ul {
+    margin: 0 0 0 25px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    list-style: circle;
+}
+
+#product-specification-ul {
+    margin: 0 0 0 25px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    list-style: square;
+}
+
+#product-specification-ul li {
+    margin: 15px 0 0 0;
+    font-weight: bold;
+}
+
+#specification-individual li {
+    display: flex;
+    margin: 10px 0 0 0;
+}
+
+.specification-individual-left {
+    font-size: 12px;
+    width: 89px;
+    padding-top: 2px;
+    font-family: 'Cinzel', serif;
+    font-weight: bold;
+}
+
+.specification-individual-right {
+    font-size: 14px;
+    max-width: 180px;
+    font-weight: normal;
+}
+
 /**********************************/
 
 /******  min-width :425px  ********/
@@ -795,6 +949,9 @@ MY COUPONS
 /**********************************/
 
 @media (min-width :425px) {
+    /****************************
+        MY CART
+    ****************************/
     .cart-item-image img {
         width: 140px;
         aspect-ratio: 1;
@@ -838,9 +995,15 @@ MY COUPONS
     #payment-price {
         font-size: 20px;
     }
+    /****************************
+    MY PROFILE
+    ****************************/
     .profile-details {
         max-width: 300px;
     }
+    /****************************
+    MY ORDER
+    ****************************/
     .order-searchbar {
         width: 250px;
     }
@@ -856,6 +1019,60 @@ MY COUPONS
     .order-delivery-status {
         font-size: 15px;
     }
+    /****************************
+    MY ORDER
+    ****************************/
+    .specification-individual-left{
+        width:100px;
+        margin-right: 5px;
+    }
+    .specification-individual-right{
+        max-width: 250px;
+    }
+    .product-image-div img{
+        width: 200px;
+    }
+    #product-info-heading{
+        font-size: 40px;
+    }
+    .rating{
+        margin: 12px 0 0 10px;
+    }
+    .product-title-description ul li{
+        font-size: 20px;
+    }
+    #add-to-cart-button{
+        font-size: 20px;
+    }
+    #buy-button{
+        font-size: 20px;
+    }
+    .product-title-buttons{
+        margin-top: 20px;
+    }
+    .product-image-div p{
+        font-size: 25px;
+    }
+    #product-details-header{
+        font-size: 25px;
+    }
+    #product-details-delivery{
+        font-size: 20px;
+    }
+    .product-details-description ul li{
+        font-size: 20px;
+    }
+    #product-specification-ul li{
+        font-size: 20px;
+    }
+    .specification-individual-left {
+        font-size: 18px;
+        width: 150px;
+    }
+    .specification-individual-right{
+        font-size: 20px;
+        max-width: 330px;
+    }
 }
 
 /**********************************/
@@ -868,6 +1085,9 @@ MY COUPONS
     .page-container {
         margin-top: 80px;
     }
+    /****************************
+    NAVBAR
+    ****************************/
     .navbar {
         position: fixed;
         top: 0;
@@ -1032,6 +1252,9 @@ MY COUPONS
     #cart-payment {
         width: 100%;
     }
+    /****************************
+    MY PROFILE
+    ****************************/
     #profile-item-title {
         font-size: 25px;
         width: 130px;
@@ -1042,6 +1265,9 @@ MY COUPONS
     .profile-address-button a button {
         margin-left: 50px;
     }
+    /****************************
+    MY PROFILE
+    ****************************/
     .order-searchbar {
         width: 450px;
         margin-right: 10px;
@@ -1074,6 +1300,9 @@ MY COUPONS
     .carousel-image {
         aspect-ratio: 27/9;
     }
+    /****************************
+    MY CART
+    ****************************/
     .cart-item-image img {
         width: 140px;
         /* aspect-ratio:1; */
@@ -1152,6 +1381,9 @@ MY COUPONS
     .profile-holder-header {
         font-size: 25px;
     }
+    /****************************
+    MY ORDERS
+    ****************************/
     .order-searchbar {
         width: 550px;
         margin-right: 10px;
