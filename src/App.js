@@ -8,12 +8,13 @@ import AddAddress from "./pages/AddAddress";
 import MyOrders from "./pages/MyOrders";
 import MyCoupons from "./pages/MyCoupons";
 import ProductPage from "./pages/ProductPage";
+import Trial from "./components/Trial";
 
 function App() {
   return (
     <>
       <Router>
-        <Navbar trial="" />
+        <Navbar />
         <Switch>
           <Route exact path="/">
             <Homepage />
@@ -35,6 +36,9 @@ function App() {
           </Route>
           <Route exact path="/product">
             <ProductPage />
+          </Route>
+          <Route exact path="/trial">
+            <Trial/>
           </Route>
         </Switch>
       </Router>
