@@ -1,5 +1,4 @@
 const laptop = [
-
   {
     id: 0,
     name: "DELL INSPIRON Core i3 10th Gen",
@@ -281,19 +280,24 @@ const laptop = [
     name: "acer Aspire 5 Core i5 11th Gen",
     image_url: [
       {
-        image_main: "https://rukminim1.flixcart.com/image/416/416/knhsgi80/computer/u/y/4/na-thin-and-light-laptop-acer-original-imag25zfahpqmyjm.jpeg?q=70",
+        image_main:
+          "https://rukminim1.flixcart.com/image/416/416/knhsgi80/computer/u/y/4/na-thin-and-light-laptop-acer-original-imag25zfahpqmyjm.jpeg?q=70",
       },
       {
-        image: "https://rukminim1.flixcart.com/image/416/416/kt4ozgw0/computer/u/l/s/aspire-5-thin-and-light-laptop-acer-original-imag6jerbh3dkqmq.jpeg?q=70",
+        image:
+          "https://rukminim1.flixcart.com/image/416/416/kt4ozgw0/computer/u/l/s/aspire-5-thin-and-light-laptop-acer-original-imag6jerbh3dkqmq.jpeg?q=70",
       },
       {
-        image: "https://rukminim1.flixcart.com/image/416/416/kt4ozgw0/computer/i/v/r/aspire-5-thin-and-light-laptop-acer-original-imag6jerxtxyazjd.jpeg?q=70",
+        image:
+          "https://rukminim1.flixcart.com/image/416/416/kt4ozgw0/computer/i/v/r/aspire-5-thin-and-light-laptop-acer-original-imag6jerxtxyazjd.jpeg?q=70",
       },
       {
-        image: "https://rukminim1.flixcart.com/image/416/416/kt4ozgw0/computer/o/e/i/aspire-5-thin-and-light-laptop-acer-original-imag6jereusvct4k.jpeg?q=70",
+        image:
+          "https://rukminim1.flixcart.com/image/416/416/kt4ozgw0/computer/o/e/i/aspire-5-thin-and-light-laptop-acer-original-imag6jereusvct4k.jpeg?q=70",
       },
       {
-        image: "https://rukminim1.flixcart.com/image/416/416/kt4ozgw0/computer/d/x/v/aspire-5-thin-and-light-laptop-acer-original-imag6jermz6bwufq.jpeg?q=70",
+        image:
+          "https://rukminim1.flixcart.com/image/416/416/kt4ozgw0/computer/d/x/v/aspire-5-thin-and-light-laptop-acer-original-imag6jermz6bwufq.jpeg?q=70",
       },
     ],
     price: "₹49,990",
@@ -308,7 +312,8 @@ const laptop = [
     ],
     specifications: [
       {
-        general_salesPackage: "Laptop, Power Adaptor, User Guide, Warranty Documents",
+        general_salesPackage:
+          "Laptop, Power Adaptor, User Guide, Warranty Documents",
       },
       {
         general_modelNumber: "A515-56",
@@ -377,7 +382,8 @@ const laptop = [
         additionalFeatures: "Bluetooth v5.0",
       },
       {
-        additionalFeatures: "Intel Wireless Wi-Fi 6 AX201, 802.11a/b/g/n/acR2+ax wireless LAN",
+        additionalFeatures:
+          "Intel Wireless Wi-Fi 6 AX201, 802.11a/b/g/n/acR2+ax wireless LAN",
       },
       {
         additionalFeatures: "Gigabit Ethernet, Wake-on-LAN Ready",
@@ -389,19 +395,23 @@ const laptop = [
         additionalFeatures: "Kensington lock slot",
       },
       {
-        additionalFeatures: "100-/101-/104-key FineTip keyboard with independent numeric keypad",
+        additionalFeatures:
+          "100-/101-/104-key FineTip keyboard with independent numeric keypad",
       },
       {
         additionalFeatures: "Touchpad with Multi-touch Gesture Support",
       },
       {
-        additionalFeatures: "Acer Care Center, Quick Access, Acer Product Registration included",
+        additionalFeatures:
+          "Acer Care Center, Quick Access, Acer Product Registration included",
       },
       {
-        additionalFeatures: "48 Wh 3-cell Li-ion battery pack, Intel® Wireless Wi-Fi 6 AX201",
+        additionalFeatures:
+          "48 Wh 3-cell Li-ion battery pack, Intel® Wireless Wi-Fi 6 AX201",
       },
       {
-        warranty_warrantySummary: "1 Year International Travelers Warranty (ITW)",
+        warranty_warrantySummary:
+          "1 Year International Travelers Warranty (ITW)",
       },
       {
         warranty_warrantyServiceType: "Onsite",
@@ -420,19 +430,24 @@ const laptop = [
     name: "DELL Inspiron Ryzen 5 Hexa Core 5500U",
     image_url: [
       {
-        image_main: "https://rukminim1.flixcart.com/image/416/416/kqe3low0/computer/m/g/r/inspiron-7415-2-in-1-laptop-dell-original-imag4ewka4uhnx4w.jpeg?q=70",
+        image_main:
+          "https://rukminim1.flixcart.com/image/416/416/kqe3low0/computer/m/g/r/inspiron-7415-2-in-1-laptop-dell-original-imag4ewka4uhnx4w.jpeg?q=70",
       },
       {
-        image: "https://rukminim1.flixcart.com/image/416/416/kqe3low0/computer/g/r/0/inspiron-7415-2-in-1-laptop-dell-original-imag4ewkztzzqfub.jpeg?q=70",
+        image:
+          "https://rukminim1.flixcart.com/image/416/416/kqe3low0/computer/g/r/0/inspiron-7415-2-in-1-laptop-dell-original-imag4ewkztzzqfub.jpeg?q=70",
       },
       {
-        image: "https://rukminim1.flixcart.com/image/416/416/kqe3low0/computer/z/y/5/inspiron-7415-2-in-1-laptop-dell-original-imag4ewkukmnhpzt.jpeg?q=70",
+        image:
+          "https://rukminim1.flixcart.com/image/416/416/kqe3low0/computer/z/y/5/inspiron-7415-2-in-1-laptop-dell-original-imag4ewkukmnhpzt.jpeg?q=70",
       },
       {
-        image: "https://rukminim1.flixcart.com/image/416/416/kqe3low0/computer/m/o/a/inspiron-7415-2-in-1-laptop-dell-original-imag4ewkfthhymrg.jpeg?q=70",
+        image:
+          "https://rukminim1.flixcart.com/image/416/416/kqe3low0/computer/m/o/a/inspiron-7415-2-in-1-laptop-dell-original-imag4ewkfthhymrg.jpeg?q=70",
       },
       {
-        image: "https://rukminim1.flixcart.com/image/416/416/kqe3low0/computer/z/b/p/inspiron-7415-2-in-1-laptop-dell-original-imag4ewkmdfczhgj.jpeg?q=70",
+        image:
+          "https://rukminim1.flixcart.com/image/416/416/kqe3low0/computer/z/b/p/inspiron-7415-2-in-1-laptop-dell-original-imag4ewkmdfczhgj.jpeg?q=70",
       },
     ],
     price: "₹69,990",
@@ -441,13 +456,17 @@ const laptop = [
     delivery_charges: "₹100",
     highlights: [
       { highlight: "Carry It Along 2 in 1 Laptop" },
-      { highlight: "14 Inch Full HD LED Backlit, WVA Display (Touch with Active Pen)" },
+      {
+        highlight:
+          "14 Inch Full HD LED Backlit, WVA Display (Touch with Active Pen)",
+      },
       { highlight: "Finger Print Sensor for Faster System Access" },
       { highlight: "Light Laptop without Optical Disk Drive" },
     ],
     specifications: [
       {
-        general_salesPackage: "Laptop, Active Pen, Battery, Adapter, Cables and User Manuals",
+        general_salesPackage:
+          "Laptop, Active Pen, Battery, Adapter, Cables and User Manuals",
       },
       {
         general_modelNumber: "Inspiron 7415",
@@ -516,7 +535,8 @@ const laptop = [
         additionalFeatures: "Color Pebble Green",
       },
       {
-        additionalFeatures: "Full HD LED Backlit, WVA Display (Touch with Active Pen)",
+        additionalFeatures:
+          "Full HD LED Backlit, WVA Display (Touch with Active Pen)",
       },
       {
         additionalFeatures: "Waves Maxx Audio Pro Sound",
@@ -568,19 +588,24 @@ const laptop = [
     name: "Lenovo IdeaPad 3 Core i3 11th Gen",
     image_url: [
       {
-        image_main: "https://rukminim1.flixcart.com/image/416/416/kruyw7k0/computer/f/i/u/na-thin-and-light-laptop-lenovo-original-imag5jy6fsm2yx4q.jpeg?q=70",
+        image_main:
+          "https://rukminim1.flixcart.com/image/416/416/kruyw7k0/computer/f/i/u/na-thin-and-light-laptop-lenovo-original-imag5jy6fsm2yx4q.jpeg?q=70",
       },
       {
-        image: "https://rukminim1.flixcart.com/image/416/416/kruyw7k0/computer/e/h/f/na-thin-and-light-laptop-lenovo-original-imag5jy6chya8jjg.jpeg?q=70",
+        image:
+          "https://rukminim1.flixcart.com/image/416/416/kruyw7k0/computer/e/h/f/na-thin-and-light-laptop-lenovo-original-imag5jy6chya8jjg.jpeg?q=70",
       },
       {
-        image: "https://rukminim1.flixcart.com/image/416/416/kruyw7k0/computer/c/t/x/na-thin-and-light-laptop-lenovo-original-imag5jy6whzkkyeq.jpeg?q=70",
+        image:
+          "https://rukminim1.flixcart.com/image/416/416/kruyw7k0/computer/c/t/x/na-thin-and-light-laptop-lenovo-original-imag5jy6whzkkyeq.jpeg?q=70",
       },
       {
-        image: "https://rukminim1.flixcart.com/image/416/416/krdtlzk0/computer/l/o/3/na-thin-and-light-laptop-lenovo-original-imag56ugf7s2s9ks.jpeg?q=70",
+        image:
+          "https://rukminim1.flixcart.com/image/416/416/krdtlzk0/computer/l/o/3/na-thin-and-light-laptop-lenovo-original-imag56ugf7s2s9ks.jpeg?q=70",
       },
       {
-        image: "https://rukminim1.flixcart.com/image/416/416/krdtlzk0/computer/x/y/s/na-thin-and-light-laptop-lenovo-original-imag56ug9pkgb6wj.jpeg?q=70",
+        image:
+          "https://rukminim1.flixcart.com/image/416/416/krdtlzk0/computer/x/y/s/na-thin-and-light-laptop-lenovo-original-imag56ug9pkgb6wj.jpeg?q=70",
       },
     ],
     price: "₹40,990",
@@ -595,7 +620,8 @@ const laptop = [
     ],
     specifications: [
       {
-        general_salesPackage: "Laptop, Power Adaptor, User Guide, Warranty Documents",
+        general_salesPackage:
+          "Laptop, Power Adaptor, User Guide, Warranty Documents",
       },
       {
         general_modelNumber: "15ITL6",
@@ -707,19 +733,24 @@ const laptop = [
     name: "DELL Vostro 3405 Athlon Dual Core 3050",
     image_url: [
       {
-        image_main: "https://rukminim1.flixcart.com/image/416/416/kirr24w0/computer/h/m/y/dell-na-thin-and-light-laptop-original-imafyhm5fac6yfvy.jpeg?q=70",
+        image_main:
+          "https://rukminim1.flixcart.com/image/416/416/kirr24w0/computer/h/m/y/dell-na-thin-and-light-laptop-original-imafyhm5fac6yfvy.jpeg?q=70",
       },
       {
-        image: "https://rukminim1.flixcart.com/image/416/416/kirr24w0/computer/h/m/y/dell-na-thin-and-light-laptop-original-imafyhm5cnwuyzqu.jpeg?q=70",
+        image:
+          "https://rukminim1.flixcart.com/image/416/416/kirr24w0/computer/h/m/y/dell-na-thin-and-light-laptop-original-imafyhm5cnwuyzqu.jpeg?q=70",
       },
       {
-        image: "https://rukminim1.flixcart.com/image/416/416/kirr24w0/computer/h/m/y/dell-na-thin-and-light-laptop-original-imafyhm5tb3hhk7j.jpeg?q=70",
+        image:
+          "https://rukminim1.flixcart.com/image/416/416/kirr24w0/computer/h/m/y/dell-na-thin-and-light-laptop-original-imafyhm5tb3hhk7j.jpeg?q=70",
       },
       {
-        image: "https://rukminim1.flixcart.com/image/416/416/kiow6fk0/computer/k/2/c/dell-original-imafyff7z4kt2rgh.jpeg?q=70",
+        image:
+          "https://rukminim1.flixcart.com/image/416/416/kiow6fk0/computer/k/2/c/dell-original-imafyff7z4kt2rgh.jpeg?q=70",
       },
       {
-        image: "https://rukminim1.flixcart.com/image/416/416/kirr24w0/computer/h/m/y/dell-na-thin-and-light-laptop-original-imafyhm5ahufhsxg.jpeg?q=70",
+        image:
+          "https://rukminim1.flixcart.com/image/416/416/kirr24w0/computer/h/m/y/dell-na-thin-and-light-laptop-original-imafyhm5ahufhsxg.jpeg?q=70",
       },
     ],
     price: "₹28,790",
@@ -734,7 +765,8 @@ const laptop = [
     ],
     specifications: [
       {
-        general_salesPackage: "Laptop, Power Adaptor, User Guide, Warranty Documents",
+        general_salesPackage:
+          "Laptop, Power Adaptor, User Guide, Warranty Documents",
       },
       {
         general_modelNumber: "Vostro 3405",
@@ -827,7 +859,8 @@ const laptop = [
         additionalFeatures: "Kensington Lock Slot",
       },
       {
-        additionalFeatures: "McAfee Multi Device Security 15 Months Subscription",
+        additionalFeatures:
+          "McAfee Multi Device Security 15 Months Subscription",
       },
       {
         additionalFeatures: "English International Non Backlit Keyboard",
@@ -858,7 +891,8 @@ const laptop = [
     name: "ZOONIS Z Series Core i3",
     image_url: [
       {
-        image_main: "https://rukminim1.flixcart.com/image/416/416/jljri4w0/allinone-desktop/4/v/z/zoonis-core-2-duo-3-0-500-gb-4gb-ddr2-ram-15-6-led-original-imaf7spbhtpe4gtb.jpeg?q=70",
+        image_main:
+          "https://rukminim1.flixcart.com/image/416/416/jljri4w0/allinone-desktop/4/v/z/zoonis-core-2-duo-3-0-500-gb-4gb-ddr2-ram-15-6-led-original-imaf7spbhtpe4gtb.jpeg?q=70",
       },
     ],
     price: "₹18,999",
@@ -872,7 +906,8 @@ const laptop = [
     ],
     specifications: [
       {
-        general_salesPackage: "CPU,AOC 18.5 LED,POWER CORD,KEYBOARD MOUSE, DRIVER CD",
+        general_salesPackage:
+          "CPU,AOC 18.5 LED,POWER CORD,KEYBOARD MOUSE, DRIVER CD",
       },
       {
         general_modelNumber: "NA",
@@ -963,16 +998,20 @@ const laptop = [
     name: "APPLE MacBook Air M1",
     image_url: [
       {
-        image_main: "https://rukminim1.flixcart.com/image/416/416/kp5sya80/screen-guard/tempered-glass/o/v/n/apple-macbook-air-m1-13-3-inch-lightwings-original-imag3gh5xftgbpg3.jpeg?q=70",
+        image_main:
+          "https://rukminim1.flixcart.com/image/416/416/kp5sya80/screen-guard/tempered-glass/o/v/n/apple-macbook-air-m1-13-3-inch-lightwings-original-imag3gh5xftgbpg3.jpeg?q=70",
       },
       {
-        image: "https://rukminim1.flixcart.com/image/416/416/kruyw7k0/computer/j/q/o/na-thin-and-light-laptop-apple-original-imag5jt7uezqkefz.jpeg?q=70",
+        image:
+          "https://rukminim1.flixcart.com/image/416/416/kruyw7k0/computer/j/q/o/na-thin-and-light-laptop-apple-original-imag5jt7uezqkefz.jpeg?q=70",
       },
       {
-        image: "https://rukminim1.flixcart.com/image/416/416/kruyw7k0/computer/p/s/p/na-thin-and-light-laptop-apple-original-imag5jt7zpmhsrpm.jpeg?q=70",
+        image:
+          "https://rukminim1.flixcart.com/image/416/416/kruyw7k0/computer/p/s/p/na-thin-and-light-laptop-apple-original-imag5jt7zpmhsrpm.jpeg?q=70",
       },
       {
-        image: "https://rukminim1.flixcart.com/image/416/416/kruyw7k0/computer/h/l/6/na-thin-and-light-laptop-apple-original-imag5jt7fx4gfun4.jpeg?q=70",
+        image:
+          "https://rukminim1.flixcart.com/image/416/416/kruyw7k0/computer/h/l/6/na-thin-and-light-laptop-apple-original-imag5jt7fx4gfun4.jpeg?q=70",
       },
     ],
     price: "₹83,990",
@@ -982,12 +1021,16 @@ const laptop = [
     highlights: [
       { highlight: "Stylish & Portable Thin and Light Laptop" },
       { highlight: "13.3 inch Quad LED Backlit IPS Display" },
-      { highlight: "227 PPI, 400 nits Brightness, Wide Colour (P3), True Tone Technology" },
+      {
+        highlight:
+          "227 PPI, 400 nits Brightness, Wide Colour (P3), True Tone Technology",
+      },
       { highlight: "Light Laptop without Optical Disk Drive" },
     ],
     specifications: [
       {
-        general_salesPackage: "MacBook Air, 30 W USB-C Power Adapter, USB-C Charge Cable (2m), User Guide, Warranty Documents",
+        general_salesPackage:
+          "MacBook Air, 30 W USB-C Power Adapter, USB-C Charge Cable (2m), User Guide, Warranty Documents",
       },
       {
         general_modelNumber: "MGN63HN/A",
@@ -996,1343 +1039,1249 @@ const laptop = [
         general_partNumber: "MGN63HN/A",
       },
       {
-        general_modelName: "",
+        general_modelName: "NA",
       },
       {
-        general_series: "",
+        general_series: "MacBook Air",
       },
       {
-        general_type: "",
+        general_type: "Thin and Light Laptop",
       },
       {
-        general_suitableFor: "",
+        general_suitableFor: "Processing & Multitasking",
       },
       {
-        general_batteryBackup: "",
+        general_batteryBackup: "Upto 15 hours",
       },
       {
-        general_msOfficeProvided: "",
+        general_msOfficeProvided: "NO",
       },
       {
-        processor_processorBrand: "",
+        processor_processorBrand: "Apple",
       },
       {
-        processor_processorName: "",
+        processor_processorName: "M1",
       },
       {
-        processor_processorGeneration: "",
+        processor_processorGeneration: "NA",
       },
       {
-        processor_ssd: "",
+        processor_ssd: "256 GB",
       },
       {
-        processor_ram: "",
+        processor_ram: "8 GB",
       },
       {
-        processor_ramType: "",
+        processor_ramType: "DDR4",
       },
       {
-        processor_hddCapacity: "",
+        processor_hddCapacity: "NA",
       },
       {
-        processor_graphicProcessor: "",
+        processor_graphicProcessor: "NA",
       },
       {
-        operatingSystem_operatingSystem: "",
+        operatingSystem_operatingSystem: "Mac OS Big Sur",
       },
       {
-        operatingSystem_systemArchitecture: "",
+        operatingSystem_systemArchitecture: "NA",
       },
       {
-        displayAndAudioFeatures_touchScreen: "",
+        displayAndAudioFeatures_touchScreen: "No",
       },
       {
-        displayAndAudioFeatures_screenSize: "",
+        displayAndAudioFeatures_screenSize: "33.78 cm (13.3 inch)",
       },
       {
-        displayAndAudioFeatures_screenResolution: "",
+        displayAndAudioFeatures_screenResolution: "2560 x 1600 Pixel",
       },
       {
-        additionalFeatures: "",
+        additionalFeatures:
+          "Quad LED Backlit IPS Display (227 PPI, 400 nits Brightness, Wide Colour (P3), True Tone Technology)",
       },
       {
-        additionalFeatures: "",
+        additionalFeatures: "Built-in Speakers",
       },
       {
-        additionalFeatures: "",
+        additionalFeatures: "Three-mic Array with Directional Beamforming",
       },
       {
-        additionalFeatures: "",
+        additionalFeatures:
+          "Stereo Speakers, Wide Stereo Sound, Support for Dolby Atmos Playback",
       },
       {
-        additionalFeatures: "",
+        additionalFeatures:
+          "2 x Thunderbolt / USB 4 Ports (Supports Charging, DisplayPort, Thunderbolt 3 (Upto 40 Gbps), USB 3.1 (2nd Gen, Upto 10 Gbps))",
       },
       {
-        additionalFeatures: "",
+        additionalFeatures: "IEEE 802.11ax (Wi-Fi 6)",
       },
       {
-        additionalFeatures: "",
+        additionalFeatures: "Bluetooth v5.0",
       },
       {
-        additionalFeatures: "",
+        additionalFeatures: "Force Touch Trackpad",
       },
       {
-        additionalFeatures: "",
+        additionalFeatures: "Backlit Magic Keyboard",
       },
       {
-        warranty_warrantySummary: "",
+        additionalFeatures: "49.9 WHr Li-polymer Battery",
       },
       {
-        warranty_warrantyServiceType: "",
+        warranty_warrantySummary: "1 Year Limited Warra­nty",
       },
       {
-        warranty_coveredInWarranty: "",
+        warranty_warrantyServiceType: "Onsite",
       },
       {
-        warranty_notCoveredInWarranty: "",
+        warranty_coveredInWarranty: "Manufacturing Defects",
+      },
+      {
+        warranty_notCoveredInWarranty: "Physical Damage",
+      },
+    ],
+  },
+  {
+    id: 8,
+    name: "DELL INSPIRON Core i3 10th Gen",
+    image_url: [
+      {
+        image_main:
+          "https://rukminim1.flixcart.com/image/416/416/kikluvk0-0/laptop-display/s/4/e/inspiron-3501-dell-original-imafyc7hqnjzg8cm.jpeg?q=70",
+      },
+      {
+        image:
+          "https://rukminim1.flixcart.com/image/416/416/kikluvk0-0/laptop-display/e/q/f/inspiron-3501-dell-original-imafyc7hh2fmbpgg.jpeg?q=70",
+      },
+      {
+        image:
+          "https://rukminim1.flixcart.com/image/416/416/kikluvk0-0/laptop-display/o/w/p/inspiron-3501-dell-original-imafyc7hezwtqrvu.jpeg?q=70",
+      },
+      {
+        image:
+          "https://rukminim1.flixcart.com/image/416/416/kk4c13k0/computer/h/9/d/inspiron-laptop-dell-original-imafzj4xgzfjb94u.jpeg?q=70",
+      },
+    ],
+    price: "₹41,490",
+    rating: "4.2",
+    delivery_date: "22 Oct, Friday",
+    delivery_charges: "₹100",
+    highlights: [
+      { highlight: "Pre-installed Genuine Windows 10 OS" },
+      { highlight: "Preloaded with MS Office" },
+      { highlight: "Light Laptop without Optical Disk Drive" },
+      {
+        highlight: "15.6 inch",
+      },
+    ],
+    specifications: [
+      {
+        general_salesPackage:
+          "Laptop, Power Adaptor, User Guide, Warranty Documents",
+      },
+      {
+        general_modelNumber: "Inspiron 3501",
+      },
+      {
+        general_partNumber: "D560288WIN9S/D560365WIN9",
+      },
+      {
+        general_modelName: "INSPIRON 3501",
+      },
+      {
+        general_series: "INSPIRON",
+      },
+      {
+        general_type: "Laptop",
+      },
+      {
+        general_suitableFor: "Processing & Multitasking",
+      },
+      {
+        general_batteryBackup: "Upto 6hrs",
+      },
+      {
+        general_msOfficeProvided: "Yes",
+      },
+      {
+        processor_processorBrand: "Intel",
+      },
+      {
+        processor_processorName: "Core i3",
+      },
+      {
+        processor_processorGeneration: "10th Gen",
+      },
+      {
+        processor_ssd: "No",
+      },
+      {
+        processor_ram: "8 GB",
+      },
+      {
+        processor_ramType: "DDR4",
+      },
+      {
+        processor_hddCapacity: "1 TB",
+      },
+      {
+        processor_graphicProcessor: "Intel Integrated Intel Integrated UHD",
+      },
+      {
+        operatingSystem_operatingSystem: "Windows 10 Home",
+      },
+      {
+        operatingSystem_systemArchitecture: "64 bit",
+      },
+      {
+        displayAndAudioFeatures_touchScreen: "No",
+      },
+      {
+        displayAndAudioFeatures_screenSize: "39.62 cm (15.6 inch)",
+      },
+      {
+        displayAndAudioFeatures_screenResolution: "1980 x 1080 pixel",
+      },
+      {
+        additionalFeatures: "Disk drive not available",
+      },
+      {
+        additionalFeatures: "Bluetooth v5.0",
+      },
+      {
+        warranty_warrantySummary:
+          "1 Year Limited Hardware Warranty, In Home Service After Remote Diagnosis - Retail",
+      },
+      {
+        warranty_warrantyServiceType: "Onsite",
+      },
+      {
+        warranty_coveredInWarranty: "Manufacturing Defects",
+      },
+      {
+        warranty_notCoveredInWarranty: "Physical Damage",
       },
     ],
   },
 
   {
-    id: 8,
-    name: "",
-    image_url: [
-      {
-        image_main: "",
-      },
-      {
-        image: "",
-      },
-      {
-        image: "",
-      },
-      {
-        image: "",
-      },
-      {
-        image: "",
-      },
-    ],
-    price: "",
-    rating: "",
-    delivery_date: "22nd Oct, Friday",
-    delivery_charges: "₹100",
-    highlights: [
-      { highlight: "" },
-      { highlight: "" },
-      { highlight: "" },
-      { highlight: "" },
-    ],
-    specifications: [
-      {
-        general_salesPackage: "",
-      },
-      {
-        general_modelNumber: "",
-      },
-      {
-        general_partNumber: "",
-      },
-      {
-        general_modelName: "",
-      },
-      {
-        general_series: "",
-      },
-      {
-        general_type: "",
-      },
-      {
-        general_suitableFor: "",
-      },
-      {
-        general_batteryBackup: "",
-      },
-      {
-        general_msOfficeProvided: "",
-      },
-      {
-        processor_processorBrand: "",
-      },
-      {
-        processor_processorName: "",
-      },
-      {
-        processor_processorGeneration: "",
-      },
-      {
-        processor_ssd: "",
-      },
-      {
-        processor_ram: "",
-      },
-      {
-        processor_ramType: "",
-      },
-      {
-        processor_hddCapacity: "",
-      },
-      {
-        processor_graphicProcessor: "",
-      },
-      {
-        operatingSystem_operatingSystem: "",
-      },
-      {
-        operatingSystem_systemArchitecture: "",
-      },
-      {
-        displayAndAudioFeatures_touchScreen: "",
-      },
-      {
-        displayAndAudioFeatures_screenSize: "",
-      },
-      {
-        displayAndAudioFeatures_screenResolution: "",
-      },
-      {
-        additionalFeatures: "",
-      },
-      {
-        additionalFeatures: "",
-      },
-      {
-        additionalFeatures: "",
-      },
-      {
-        additionalFeatures: "",
-      },
-      {
-        additionalFeatures: "",
-      },
-      {
-        additionalFeatures: "",
-      },
-      {
-        additionalFeatures: "",
-      },
-      {
-        additionalFeatures: "",
-      },
-      {
-        additionalFeatures: "",
-      },
-      {
-        warranty_warrantySummary: "",
-      },
-      {
-        warranty_warrantyServiceType: "",
-      },
-      {
-        warranty_coveredInWarranty: "",
-      },
-      {
-        warranty_notCoveredInWarranty: "",
-      },
-    ],
-  },
-  {
     id: 9,
-    name: "",
+    name: "HP Pavilion Core i7 11th Gen ",
     image_url: [
       {
-        image_main: "",
+        image_main:
+          "https://rukminim1.flixcart.com/image/416/416/kl9rssw0/computer/v/n/e/hp-original-imagyfmhb29hsg6g.jpeg?q=70",
       },
       {
-        image: "",
+        image:
+          "https://rukminim1.flixcart.com/image/416/416/kl9rssw0/computer/f/r/h/hp-original-imagyfmhy6enbhfq.jpeg?q=70",
       },
       {
-        image: "",
+        image:
+          "https://rukminim1.flixcart.com/image/416/416/kl9rssw0/computer/t/n/k/hp-original-imagyfmhvqgx7ygc.jpeg?q=70",
       },
       {
-        image: "",
+        image:
+          "https://rukminim1.flixcart.com/image/416/416/kl9rssw0/computer/y/6/b/hp-original-imagyfmhtgguc7tg.jpeg?q=70",
       },
       {
-        image: "",
+        image:
+          "https://rukminim1.flixcart.com/image/416/416/kl9rssw0/computer/n/k/0/hp-original-imagyfmhsauh5qsf.jpeg?q=70",
       },
     ],
-    price: "",
-    rating: "",
-    delivery_date: "22nd Oct, Friday",
+    price: "₹84,990",
+    rating: "4.4",
+    delivery_date: "22 Oct, Friday",
     delivery_charges: "₹100",
     highlights: [
-      { highlight: "" },
-      { highlight: "" },
-      { highlight: "" },
-      { highlight: "" },
+      { highlight: "Stylish & Portable Thin and Light Laptop" },
+      { highlight: "14 inch Full HD LED Backlit Anti-glare IPS Micro-edge" },
+      {
+        highlight:
+          "Display (250 nits Brightness, 45% NTSC Color Gamut, 157 PPI)",
+      },
+      { highlight: "Finger Print Sensor for Faster System Access" },
+      { highlight: "Light Laptop without Optical Disk Drive" },
     ],
     specifications: [
       {
-        general_salesPackage: "",
+        general_salesPackage:
+          "Laptop, Power Adaptor, User Guide, Warranty Documents",
       },
       {
-        general_modelNumber: "",
+        general_modelNumber: "14-dv0058TU",
       },
       {
-        general_partNumber: "",
+        general_partNumber: "2N1L4PA#ACJ",
       },
       {
         general_modelName: "",
       },
       {
-        general_series: "",
+        general_series: "Pavilion",
       },
       {
-        general_type: "",
+        general_type: "Thin and Light Laptop",
       },
       {
-        general_suitableFor: "",
+        general_suitableFor: "Processing & Multitasking",
       },
       {
-        general_batteryBackup: "",
+        general_batteryBackup: "3 cell",
       },
       {
-        general_msOfficeProvided: "",
+        general_msOfficeProvided: "Yes",
       },
       {
-        processor_processorBrand: "",
+        processor_processorBrand: "Intel",
       },
       {
-        processor_processorName: "",
+        processor_processorName: "Core i7",
       },
       {
-        processor_processorGeneration: "",
+        processor_processorGeneration: "11th Gen",
       },
       {
-        processor_ssd: "",
+        processor_ssd: "1 TB",
       },
       {
-        processor_ram: "",
+        processor_ram: "16 GB",
       },
       {
-        processor_ramType: "",
+        processor_ramType: "DDR4",
       },
       {
         processor_hddCapacity: "",
       },
       {
-        processor_graphicProcessor: "",
+        processor_graphicProcessor: "Intel Integrated Iris Xe",
       },
       {
-        operatingSystem_operatingSystem: "",
+        operatingSystem_operatingSystem: "Windows 10 Home",
       },
       {
-        operatingSystem_systemArchitecture: "",
+        operatingSystem_systemArchitecture: "64 bit",
       },
       {
-        displayAndAudioFeatures_touchScreen: "",
+        displayAndAudioFeatures_touchScreen: "No",
       },
       {
-        displayAndAudioFeatures_screenSize: "",
+        displayAndAudioFeatures_screenSize: "35.56 cm (14 inch)",
       },
       {
-        displayAndAudioFeatures_screenResolution: "",
+        displayAndAudioFeatures_screenResolution: "1920 x 1080 Pixel",
       },
       {
-        additionalFeatures: "",
+        additionalFeatures: "HP True Vision 720p HD Webcam",
       },
       {
-        additionalFeatures: "",
+        additionalFeatures: "Finger Print Sensor",
       },
       {
-        additionalFeatures: "",
+        additionalFeatures: "Full-size Backlit Natural Silver Keyboard",
       },
       {
-        additionalFeatures: "",
+        additionalFeatures: "HP Imagepad with Multi-touch Gesture Support",
       },
       {
-        additionalFeatures: "",
+        additionalFeatures: "Intel Wi-Fi 6 AX201 (2x2)",
       },
       {
-        additionalFeatures: "",
+        additionalFeatures: "Bluetooth v5.0",
       },
       {
-        additionalFeatures: "",
+        additionalFeatures:
+          "Microsoft Office Home and Student 2019, HP Documentation",
       },
       {
-        additionalFeatures: "",
+        additionalFeatures: "HP Smart, HP BIOS Recovery, HP Support Assistant",
       },
       {
-        additionalFeatures: "",
+        additionalFeatures: "43 WHr Li-ion Battery with Fast Charge Support",
       },
       {
-        warranty_warrantySummary: "",
+        additionalFeatures: "MU-MIMO Supported, Miracast Compatible",
       },
       {
-        warranty_warrantyServiceType: "",
+        warranty_warrantySummary: "1 Year Onsite Warranty",
       },
       {
-        warranty_coveredInWarranty: "",
+        warranty_warrantyServiceType: "Onsite",
       },
       {
-        warranty_notCoveredInWarranty: "",
+        warranty_coveredInWarranty: "Manufacturing Defects",
+      },
+      {
+        warranty_notCoveredInWarranty: "Physical Damage",
       },
     ],
   },
+
   {
     id: 10,
-    name: "",
+    name: "acer Aspire 5 Core i5 11th Gen",
     image_url: [
       {
-        image_main: "",
+        image_main:
+          "https://rukminim1.flixcart.com/image/416/416/knhsgi80/computer/u/y/4/na-thin-and-light-laptop-acer-original-imag25zfahpqmyjm.jpeg?q=70",
       },
       {
-        image: "",
+        image:
+          "https://rukminim1.flixcart.com/image/416/416/kt4ozgw0/computer/u/l/s/aspire-5-thin-and-light-laptop-acer-original-imag6jerbh3dkqmq.jpeg?q=70",
       },
       {
-        image: "",
+        image:
+          "https://rukminim1.flixcart.com/image/416/416/kt4ozgw0/computer/i/v/r/aspire-5-thin-and-light-laptop-acer-original-imag6jerxtxyazjd.jpeg?q=70",
       },
       {
-        image: "",
+        image:
+          "https://rukminim1.flixcart.com/image/416/416/kt4ozgw0/computer/o/e/i/aspire-5-thin-and-light-laptop-acer-original-imag6jereusvct4k.jpeg?q=70",
       },
       {
-        image: "",
+        image:
+          "https://rukminim1.flixcart.com/image/416/416/kt4ozgw0/computer/d/x/v/aspire-5-thin-and-light-laptop-acer-original-imag6jermz6bwufq.jpeg?q=70",
       },
     ],
-    price: "",
-    rating: "",
+    price: "₹49,990",
+    rating: "4.2",
     delivery_date: "22nd Oct, Friday",
     delivery_charges: "₹100",
     highlights: [
-      { highlight: "" },
-      { highlight: "" },
-      { highlight: "" },
-      { highlight: "" },
+      { highlight: "Stylish & Portable Thin and Light Laptop" },
+      { highlight: "15.6 inch Full HD" },
+      { highlight: "high-brightness Acer ComfyView LED-backlit TFT LCD" },
+      { highlight: "Light Laptop without Optical Disk Drive" },
     ],
     specifications: [
       {
-        general_salesPackage: "",
+        general_salesPackage:
+          "Laptop, Power Adaptor, User Guide, Warranty Documents",
       },
       {
-        general_modelNumber: "",
+        general_modelNumber: "A515-56",
       },
       {
-        general_partNumber: "",
+        general_partNumber: "UN.A1ESI.004 / NX.A1ESI.006",
       },
       {
-        general_modelName: "",
+        general_modelName: "Aspire 5",
       },
       {
-        general_series: "",
+        general_series: "Aspire 5",
       },
       {
-        general_type: "",
+        general_type: "Thin and Light Laptop",
       },
       {
-        general_suitableFor: "",
+        general_suitableFor: "Everyday Use, Processing & Multitasking",
       },
       {
-        general_batteryBackup: "",
+        general_batteryBackup: "Upto 9.5 hours",
       },
       {
-        general_msOfficeProvided: "",
+        general_msOfficeProvided: "No",
       },
       {
-        processor_processorBrand: "",
+        processor_processorBrand: "Intel",
       },
       {
-        processor_processorName: "",
+        processor_processorName: "Core i5",
       },
       {
-        processor_processorGeneration: "",
+        processor_processorGeneration: "11th Gen",
       },
       {
-        processor_ssd: "",
+        processor_ssd: "256 GB",
       },
       {
-        processor_ram: "",
+        processor_ram: "8 GB",
       },
       {
-        processor_ramType: "",
+        processor_ramType: "DDR4",
       },
       {
-        processor_hddCapacity: "",
+        processor_hddCapacity: "1 TB",
       },
       {
-        processor_graphicProcessor: "",
+        processor_graphicProcessor: "Intel Integrated Iris Xe",
       },
       {
-        operatingSystem_operatingSystem: "",
+        operatingSystem_operatingSystem: "Windows 10 Home",
       },
       {
-        operatingSystem_systemArchitecture: "",
+        operatingSystem_systemArchitecture: "64 bit",
       },
       {
-        displayAndAudioFeatures_touchScreen: "",
+        displayAndAudioFeatures_touchScreen: "No",
       },
       {
-        displayAndAudioFeatures_screenSize: "",
+        displayAndAudioFeatures_screenSize: "39.62 cm (15.6 inch)",
       },
       {
-        displayAndAudioFeatures_screenResolution: "",
+        displayAndAudioFeatures_screenResolution: "1920 x 1080 Pixel",
       },
       {
-        additionalFeatures: "",
+        additionalFeatures: "Bluetooth v5.0",
       },
       {
-        additionalFeatures: "",
+        additionalFeatures:
+          "Intel Wireless Wi-Fi 6 AX201, 802.11a/b/g/n/acR2+ax wireless LAN",
       },
       {
-        additionalFeatures: "",
+        additionalFeatures: "Gigabit Ethernet, Wake-on-LAN Ready",
       },
       {
-        additionalFeatures: "",
+        additionalFeatures: "720p HD Webcam",
       },
       {
-        additionalFeatures: "",
+        additionalFeatures: "Kensington lock slot",
       },
       {
-        additionalFeatures: "",
+        additionalFeatures:
+          "100-/101-/104-key FineTip keyboard with independent numeric keypad",
       },
       {
-        additionalFeatures: "",
+        additionalFeatures: "Touchpad with Multi-touch Gesture Support",
       },
       {
-        additionalFeatures: "",
+        additionalFeatures:
+          "Acer Care Center, Quick Access, Acer Product Registration included",
       },
       {
-        additionalFeatures: "",
+        additionalFeatures:
+          "48 Wh 3-cell Li-ion battery pack, Intel® Wireless Wi-Fi 6 AX201",
       },
       {
-        warranty_warrantySummary: "",
+        warranty_warrantySummary:
+          "1 Year International Travelers Warranty (ITW)",
       },
       {
-        warranty_warrantyServiceType: "",
+        warranty_warrantyServiceType: "Onsite",
       },
       {
-        warranty_coveredInWarranty: "",
+        warranty_coveredInWarranty: "Manufacturing Defects",
       },
       {
-        warranty_notCoveredInWarranty: "",
+        warranty_notCoveredInWarranty: "Physical Damage",
       },
     ],
   },
+
   {
     id: 11,
-    name: "",
+    name: "DELL Inspiron Ryzen 5 Hexa Core 5500U",
     image_url: [
       {
-        image_main: "",
+        image_main:
+          "https://rukminim1.flixcart.com/image/416/416/kqe3low0/computer/m/g/r/inspiron-7415-2-in-1-laptop-dell-original-imag4ewka4uhnx4w.jpeg?q=70",
       },
       {
-        image: "",
+        image:
+          "https://rukminim1.flixcart.com/image/416/416/kqe3low0/computer/g/r/0/inspiron-7415-2-in-1-laptop-dell-original-imag4ewkztzzqfub.jpeg?q=70",
       },
       {
-        image: "",
+        image:
+          "https://rukminim1.flixcart.com/image/416/416/kqe3low0/computer/z/y/5/inspiron-7415-2-in-1-laptop-dell-original-imag4ewkukmnhpzt.jpeg?q=70",
       },
       {
-        image: "",
+        image:
+          "https://rukminim1.flixcart.com/image/416/416/kqe3low0/computer/m/o/a/inspiron-7415-2-in-1-laptop-dell-original-imag4ewkfthhymrg.jpeg?q=70",
       },
       {
-        image: "",
+        image:
+          "https://rukminim1.flixcart.com/image/416/416/kqe3low0/computer/z/b/p/inspiron-7415-2-in-1-laptop-dell-original-imag4ewkmdfczhgj.jpeg?q=70",
       },
     ],
-    price: "",
-    rating: "",
+    price: "₹69,990",
+    rating: "4.4",
     delivery_date: "22nd Oct, Friday",
     delivery_charges: "₹100",
     highlights: [
-      { highlight: "" },
-      { highlight: "" },
-      { highlight: "" },
-      { highlight: "" },
+      { highlight: "Carry It Along 2 in 1 Laptop" },
+      {
+        highlight:
+          "14 Inch Full HD LED Backlit, WVA Display (Touch with Active Pen)",
+      },
+      { highlight: "Finger Print Sensor for Faster System Access" },
+      { highlight: "Light Laptop without Optical Disk Drive" },
     ],
     specifications: [
       {
-        general_salesPackage: "",
+        general_salesPackage:
+          "Laptop, Active Pen, Battery, Adapter, Cables and User Manuals",
       },
       {
-        general_modelNumber: "",
+        general_modelNumber: "Inspiron 7415",
       },
       {
-        general_partNumber: "",
+        general_partNumber: "D560470WIN9P",
       },
       {
-        general_modelName: "",
+        general_modelName: "Inspiron 7415",
       },
       {
-        general_series: "",
+        general_series: "Inspiron",
       },
       {
-        general_type: "",
+        general_type: "2 in 1 Laptop",
       },
       {
-        general_suitableFor: "",
+        general_suitableFor: "Processing & Multitasking",
       },
       {
-        general_batteryBackup: "",
+        general_batteryBackup: "4 cell backup, Upto 12 Hours",
       },
       {
-        general_msOfficeProvided: "",
+        general_msOfficeProvided: "Yes",
       },
       {
-        processor_processorBrand: "",
+        processor_processorBrand: "AMD",
       },
       {
-        processor_processorName: "",
+        processor_processorName: "Ryzen 5 Hexa Core",
       },
       {
         processor_processorGeneration: "",
       },
       {
-        processor_ssd: "",
+        processor_ssd: "512 GB",
       },
       {
-        processor_ram: "",
+        processor_ram: "8 GB",
       },
       {
-        processor_ramType: "",
+        processor_ramType: "DDR4",
       },
       {
         processor_hddCapacity: "",
       },
       {
-        processor_graphicProcessor: "",
+        processor_graphicProcessor: "AMD Radeon Vega",
       },
       {
-        operatingSystem_operatingSystem: "",
+        operatingSystem_operatingSystem: "Windows 10",
       },
       {
-        operatingSystem_systemArchitecture: "",
+        operatingSystem_systemArchitecture: "64 bit",
       },
       {
-        displayAndAudioFeatures_touchScreen: "",
+        displayAndAudioFeatures_touchScreen: "Yes",
       },
       {
-        displayAndAudioFeatures_screenSize: "",
+        displayAndAudioFeatures_screenSize: "35.56 cm (14 Inch)",
       },
       {
-        displayAndAudioFeatures_screenResolution: "",
+        displayAndAudioFeatures_screenResolution: "1920 x 1080 Pixel",
       },
       {
-        additionalFeatures: "",
+        additionalFeatures: "Color Pebble Green",
       },
       {
-        additionalFeatures: "",
+        additionalFeatures:
+          "Full HD LED Backlit, WVA Display (Touch with Active Pen)",
       },
       {
-        additionalFeatures: "",
+        additionalFeatures: "Waves Maxx Audio Pro Sound",
       },
       {
-        additionalFeatures: "",
+        additionalFeatures: "Intel Wi-Fi 6 2x2",
       },
       {
-        additionalFeatures: "",
+        additionalFeatures: "Bluetooth v5.0",
       },
       {
-        additionalFeatures: "",
+        additionalFeatures: "1.56 KG weight",
       },
       {
-        additionalFeatures: "",
+        additionalFeatures: "HD Webcam",
       },
       {
-        additionalFeatures: "",
+        additionalFeatures: "Fingerprint sensor",
       },
       {
-        additionalFeatures: "",
+        additionalFeatures: "Kensington Lock Port",
       },
       {
-        warranty_warrantySummary: "",
+        additionalFeatures: "McAfee Antivirus provided",
       },
       {
-        warranty_warrantyServiceType: "",
+        additionalFeatures: "Touchpad and Active Pen",
       },
       {
-        warranty_coveredInWarranty: "",
+        additionalFeatures: "Microsoft Office Home & Student 2019",
       },
       {
-        warranty_notCoveredInWarranty: "",
+        warranty_warrantySummary: "1 Year Onsite Warranty",
+      },
+      {
+        warranty_warrantyServiceType: "Onsite",
+      },
+      {
+        warranty_coveredInWarranty: "Manufacturing Defects",
+      },
+      {
+        warranty_notCoveredInWarranty: "Accidental Damage",
       },
     ],
   },
+
   {
     id: 12,
-    name: "",
+    name: "Lenovo IdeaPad 3 Core i3 11th Gen",
     image_url: [
       {
-        image_main: "",
+        image_main:
+          "https://rukminim1.flixcart.com/image/416/416/kruyw7k0/computer/f/i/u/na-thin-and-light-laptop-lenovo-original-imag5jy6fsm2yx4q.jpeg?q=70",
       },
       {
-        image: "",
+        image:
+          "https://rukminim1.flixcart.com/image/416/416/kruyw7k0/computer/e/h/f/na-thin-and-light-laptop-lenovo-original-imag5jy6chya8jjg.jpeg?q=70",
       },
       {
-        image: "",
+        image:
+          "https://rukminim1.flixcart.com/image/416/416/kruyw7k0/computer/c/t/x/na-thin-and-light-laptop-lenovo-original-imag5jy6whzkkyeq.jpeg?q=70",
       },
       {
-        image: "",
+        image:
+          "https://rukminim1.flixcart.com/image/416/416/krdtlzk0/computer/l/o/3/na-thin-and-light-laptop-lenovo-original-imag56ugf7s2s9ks.jpeg?q=70",
       },
       {
-        image: "",
+        image:
+          "https://rukminim1.flixcart.com/image/416/416/krdtlzk0/computer/x/y/s/na-thin-and-light-laptop-lenovo-original-imag56ug9pkgb6wj.jpeg?q=70",
       },
     ],
-    price: "",
-    rating: "",
+    price: "₹40,990",
+    rating: "4.3",
     delivery_date: "22nd Oct, Friday",
     delivery_charges: "₹100",
     highlights: [
-      { highlight: "" },
-      { highlight: "" },
-      { highlight: "" },
-      { highlight: "" },
+      { highlight: "Stylish & Portable Thin and Light Laptop" },
+      { highlight: "15.6 inch Full HD TN 220nits Anti-glare" },
+      { highlight: "Light Laptop without Optical Disk Drive" },
+      { highlight: "15.6 inch, Arctic Grey, 1.6 kg, With MS Office" },
     ],
     specifications: [
       {
-        general_salesPackage: "",
+        general_salesPackage:
+          "Laptop, Power Adaptor, User Guide, Warranty Documents",
       },
       {
-        general_modelNumber: "",
+        general_modelNumber: "15ITL6",
       },
       {
-        general_partNumber: "",
+        general_partNumber: "82H801CUIN",
       },
       {
         general_modelName: "",
       },
       {
-        general_series: "",
+        general_series: "IdeaPad 3",
       },
       {
-        general_type: "",
+        general_type: "Thin and Light Laptop",
       },
       {
-        general_suitableFor: "",
+        general_suitableFor: "Processing & Multitasking",
       },
       {
-        general_batteryBackup: "",
+        general_batteryBackup: "Upto 7.5 hours",
       },
       {
-        general_msOfficeProvided: "",
+        general_msOfficeProvided: "Yes",
       },
       {
-        processor_processorBrand: "",
+        processor_processorBrand: "Intel",
       },
       {
-        processor_processorName: "",
+        processor_processorName: "Core i3",
       },
       {
-        processor_processorGeneration: "",
+        processor_processorGeneration: "11th Gen",
       },
       {
-        processor_ssd: "",
+        processor_ssd: "256 GB",
       },
       {
-        processor_ram: "",
+        processor_ram: "8 GB",
       },
       {
-        processor_ramType: "",
+        processor_ramType: "DDR4",
       },
       {
-        processor_hddCapacity: "",
+        processor_hddCapacity: "NA",
       },
       {
-        processor_graphicProcessor: "",
+        processor_graphicProcessor: "Intel Integrated UHD",
       },
       {
-        operatingSystem_operatingSystem: "",
+        operatingSystem_operatingSystem: "Windows 10 Home",
       },
       {
-        operatingSystem_systemArchitecture: "",
+        operatingSystem_systemArchitecture: "64 bit",
       },
       {
-        displayAndAudioFeatures_touchScreen: "",
+        displayAndAudioFeatures_touchScreen: "No",
       },
       {
-        displayAndAudioFeatures_screenSize: "",
+        displayAndAudioFeatures_screenSize: "39.62 cm (15.6 inch)",
       },
       {
-        displayAndAudioFeatures_screenResolution: "",
+        displayAndAudioFeatures_screenResolution: "1920 x 1080 Pixel",
       },
       {
-        additionalFeatures: "",
+        additionalFeatures: "Color Arctic Grey",
       },
       {
-        additionalFeatures: "",
+        additionalFeatures: "Full HD TN 220nits Anti-glare Screen",
       },
       {
-        additionalFeatures: "",
+        additionalFeatures: "Built-in Dual Speakers, Array Microphone",
       },
       {
-        additionalFeatures: "",
+        additionalFeatures: "2 x 1.5W Stereo Speakers with Dolby Audio",
       },
       {
-        additionalFeatures: "",
+        additionalFeatures: "Wireless LAN v5.0",
       },
       {
-        additionalFeatures: "",
+        additionalFeatures: "Bluetooth v5.0",
       },
       {
-        additionalFeatures: "",
+        additionalFeatures: "720p with Privacy Shutter",
       },
       {
-        additionalFeatures: "",
+        additionalFeatures: "Non-backlit, English Keyboard",
       },
       {
-        additionalFeatures: "",
+        additionalFeatures: "Office Home and Student 2019 included",
       },
       {
-        warranty_warrantySummary: "",
+        warranty_warrantySummary: "1 Year Warranty Term",
       },
       {
-        warranty_warrantyServiceType: "",
+        warranty_warrantyServiceType: "Carry-In Warranty",
       },
       {
-        warranty_coveredInWarranty: "",
+        warranty_coveredInWarranty: "Manufacturing Defects",
       },
       {
-        warranty_notCoveredInWarranty: "",
+        warranty_notCoveredInWarranty: "Physical Damage",
       },
     ],
   },
+
   {
     id: 13,
-    name: "",
+    name: "DELL Vostro 3405 Athlon Dual Core 3050",
     image_url: [
       {
-        image_main: "",
+        image_main:
+          "https://rukminim1.flixcart.com/image/416/416/kirr24w0/computer/h/m/y/dell-na-thin-and-light-laptop-original-imafyhm5fac6yfvy.jpeg?q=70",
       },
       {
-        image: "",
+        image:
+          "https://rukminim1.flixcart.com/image/416/416/kirr24w0/computer/h/m/y/dell-na-thin-and-light-laptop-original-imafyhm5cnwuyzqu.jpeg?q=70",
       },
       {
-        image: "",
+        image:
+          "https://rukminim1.flixcart.com/image/416/416/kirr24w0/computer/h/m/y/dell-na-thin-and-light-laptop-original-imafyhm5tb3hhk7j.jpeg?q=70",
       },
       {
-        image: "",
+        image:
+          "https://rukminim1.flixcart.com/image/416/416/kiow6fk0/computer/k/2/c/dell-original-imafyff7z4kt2rgh.jpeg?q=70",
       },
       {
-        image: "",
+        image:
+          "https://rukminim1.flixcart.com/image/416/416/kirr24w0/computer/h/m/y/dell-na-thin-and-light-laptop-original-imafyhm5ahufhsxg.jpeg?q=70",
       },
     ],
-    price: "",
-    rating: "",
+    price: "₹28,790",
+    rating: "4.1",
     delivery_date: "22nd Oct, Friday",
     delivery_charges: "₹100",
     highlights: [
-      { highlight: "" },
-      { highlight: "" },
-      { highlight: "" },
-      { highlight: "" },
+      { highlight: "Stylish & Portable Thin and Light Laptop" },
+      { highlight: "14 inch HD LED Backlit Anti-glare Display" },
+      { highlight: "Light Laptop without Optical Disk Drive" },
+      { highlight: "4 GB/256 GB SSD/Windows 10 Home" },
     ],
     specifications: [
       {
-        general_salesPackage: "",
+        general_salesPackage:
+          "Laptop, Power Adaptor, User Guide, Warranty Documents",
       },
       {
-        general_modelNumber: "",
+        general_modelNumber: "Vostro 3405",
       },
       {
-        general_partNumber: "",
+        general_partNumber: "D552147WIN9BE",
       },
       {
-        general_modelName: "",
+        general_modelName: "NA",
       },
       {
-        general_series: "",
+        general_series: "Vostro 3405",
       },
       {
-        general_type: "",
+        general_type: "Thin and Light Laptop",
       },
       {
-        general_suitableFor: "",
+        general_suitableFor: "Processing & Multitasking",
       },
       {
-        general_batteryBackup: "",
+        general_batteryBackup: "3 cells, Upto 10 hours",
       },
       {
-        general_msOfficeProvided: "",
+        general_msOfficeProvided: "Yes",
       },
       {
-        processor_processorBrand: "",
+        processor_processorBrand: "AMD",
       },
       {
-        processor_processorName: "",
+        processor_processorName: "Athlon Dual Core",
       },
       {
-        processor_processorGeneration: "",
+        processor_processorGeneration: "NA",
       },
       {
-        processor_ssd: "",
+        processor_ssd: "256 GB",
       },
       {
-        processor_ram: "",
+        processor_ram: "4 GB",
       },
       {
-        processor_ramType: "",
+        processor_ramType: "DDR4",
       },
       {
-        processor_hddCapacity: "",
+        processor_hddCapacity: "NA",
       },
       {
-        processor_graphicProcessor: "",
+        processor_graphicProcessor: "AMD Radeon",
       },
       {
-        operatingSystem_operatingSystem: "",
+        operatingSystem_operatingSystem: "Windows 10 Home",
       },
       {
-        operatingSystem_systemArchitecture: "",
+        operatingSystem_systemArchitecture: "64 bit",
       },
       {
-        displayAndAudioFeatures_touchScreen: "",
+        displayAndAudioFeatures_touchScreen: "No",
       },
       {
-        displayAndAudioFeatures_screenSize: "",
+        displayAndAudioFeatures_screenSize: "35.56 cm (14 inch)",
       },
       {
-        displayAndAudioFeatures_screenResolution: "",
+        displayAndAudioFeatures_screenResolution: "1366 x 768 Pixel",
       },
       {
-        additionalFeatures: "",
+        additionalFeatures: "HD LED Backlit Anti-glare Display",
       },
       {
-        additionalFeatures: "",
+        additionalFeatures: "2 x USB 3.2 (1st Gen), 1 x USB 2.0",
       },
       {
-        additionalFeatures: "",
+        additionalFeatures: "1 x HDMI Port (v1.4)",
       },
       {
-        additionalFeatures: "",
+        additionalFeatures: "3-in-1 Card Reader (SD, SDHC, SDXC)",
       },
       {
-        additionalFeatures: "",
+        additionalFeatures: "IEEE 802.11ac wLAN",
       },
       {
-        additionalFeatures: "",
+        additionalFeatures: "Bluetooth v4.1",
       },
       {
-        additionalFeatures: "",
+        additionalFeatures: "Ethernet available",
       },
       {
-        additionalFeatures: "",
+        additionalFeatures: "HD Webcam",
       },
       {
-        additionalFeatures: "",
+        additionalFeatures: "Kensington Lock Slot",
       },
       {
-        warranty_warrantySummary: "",
+        additionalFeatures:
+          "McAfee Multi Device Security 15 Months Subscription",
       },
       {
-        warranty_warrantyServiceType: "",
+        additionalFeatures: "English International Non Backlit Keyboard",
       },
       {
-        warranty_coveredInWarranty: "",
+        additionalFeatures: "Microsoft Office Home and Student 2019 provided",
       },
       {
-        warranty_notCoveredInWarranty: "",
+        additionalFeatures: "Li-ion Battery",
+      },
+      {
+        warranty_warrantySummary: "1 Year Onsite Warranty",
+      },
+      {
+        warranty_warrantyServiceType: "Onsite",
+      },
+      {
+        warranty_coveredInWarranty: "Manufacturing Defects",
+      },
+      {
+        warranty_notCoveredInWarranty: "Physical Damage",
       },
     ],
   },
+
   {
     id: 14,
-    name: "",
+    name: "ZOONIS Z Series Core i3",
     image_url: [
       {
-        image_main: "",
-      },
-      {
-        image: "",
-      },
-      {
-        image: "",
-      },
-      {
-        image: "",
-      },
-      {
-        image: "",
+        image_main:
+          "https://rukminim1.flixcart.com/image/416/416/jljri4w0/allinone-desktop/4/v/z/zoonis-core-2-duo-3-0-500-gb-4gb-ddr2-ram-15-6-led-original-imaf7spbhtpe4gtb.jpeg?q=70",
       },
     ],
-    price: "",
-    rating: "",
+    price: "₹18,999",
+    rating: "3.6",
     delivery_date: "22nd Oct, Friday",
     delivery_charges: "₹100",
     highlights: [
-      { highlight: "" },
-      { highlight: "" },
-      { highlight: "" },
-      { highlight: "" },
+      { highlight: "4 GB DDR3/500 GB/Windows 10 Pro/1 GB/18.5 Inch Screen" },
+      { highlight: "Intel Core i3" },
+      { highlight: "HDD Capacity 500 GB" },
     ],
     specifications: [
       {
-        general_salesPackage: "",
+        general_salesPackage:
+          "CPU,AOC 18.5 LED,POWER CORD,KEYBOARD MOUSE, DRIVER CD",
       },
       {
-        general_modelNumber: "",
+        general_modelNumber: "NA",
       },
       {
-        general_partNumber: "",
+        general_partNumber: "ZOOGYH0027",
       },
       {
-        general_modelName: "",
+        general_modelName: "Core i5 65",
       },
       {
-        general_series: "",
+        general_series: "Z Series",
       },
       {
-        general_type: "",
+        general_type: "NA",
       },
       {
-        general_suitableFor: "",
+        general_suitableFor: "NA",
       },
       {
-        general_batteryBackup: "",
+        general_batteryBackup: "Power Supply required",
       },
       {
-        general_msOfficeProvided: "",
+        general_msOfficeProvided: "NA",
       },
       {
-        processor_processorBrand: "",
+        processor_processorBrand: "Intel",
       },
       {
-        processor_processorName: "",
+        processor_processorName: "Core i3",
       },
       {
-        processor_processorGeneration: "",
+        processor_processorGeneration: "NA",
       },
       {
-        processor_ssd: "",
+        processor_ssd: "No",
       },
       {
-        processor_ram: "",
+        processor_ram: "4 GB",
       },
       {
-        processor_ramType: "",
+        processor_ramType: "DDR3",
       },
       {
-        processor_hddCapacity: "",
+        processor_hddCapacity: "500 GB",
       },
       {
-        processor_graphicProcessor: "",
+        processor_graphicProcessor: "NA",
       },
       {
-        operatingSystem_operatingSystem: "",
+        operatingSystem_operatingSystem: "Windows 10 Pro",
       },
       {
-        operatingSystem_systemArchitecture: "",
+        operatingSystem_systemArchitecture: "64 Bit",
       },
       {
-        displayAndAudioFeatures_touchScreen: "",
+        displayAndAudioFeatures_touchScreen: "No",
       },
       {
-        displayAndAudioFeatures_screenSize: "",
+        displayAndAudioFeatures_screenSize: "18.5 Inch Screen",
       },
       {
-        displayAndAudioFeatures_screenResolution: "",
+        displayAndAudioFeatures_screenResolution: "NA",
       },
       {
-        additionalFeatures: "",
+        additionalFeatures: "1 GB Graphic Memory",
       },
       {
-        additionalFeatures: "",
+        additionalFeatures: "450 W Power Consumption",
       },
       {
-        additionalFeatures: "",
+        warranty_warrantySummary: "6 month",
       },
       {
-        additionalFeatures: "",
+        warranty_warrantyServiceType: "Onsite",
       },
       {
-        additionalFeatures: "",
+        warranty_coveredInWarranty: "NA",
       },
       {
-        additionalFeatures: "",
-      },
-      {
-        additionalFeatures: "",
-      },
-      {
-        additionalFeatures: "",
-      },
-      {
-        additionalFeatures: "",
-      },
-      {
-        warranty_warrantySummary: "",
-      },
-      {
-        warranty_warrantyServiceType: "",
-      },
-      {
-        warranty_coveredInWarranty: "",
-      },
-      {
-        warranty_notCoveredInWarranty: "",
+        warranty_notCoveredInWarranty: "NA",
       },
     ],
   },
-  {
-    id: 3,
-    name: "",
-    image_url: [
-      {
-        image_main: "",
-      },
-      {
-        image: "",
-      },
-      {
-        image: "",
-      },
-      {
-        image: "",
-      },
-      {
-        image: "",
-      },
-    ],
-    price: "",
-    rating: "",
-    delivery_date: "22nd Oct, Friday",
-    delivery_charges: "₹100",
-    highlights: [
-      { highlight: "" },
-      { highlight: "" },
-      { highlight: "" },
-      { highlight: "" },
-    ],
-    specifications: [
-      {
-        general_salesPackage: "",
-      },
-      {
-        general_modelNumber: "",
-      },
-      {
-        general_partNumber: "",
-      },
-      {
-        general_modelName: "",
-      },
-      {
-        general_series: "",
-      },
-      {
-        general_type: "",
-      },
-      {
-        general_suitableFor: "",
-      },
-      {
-        general_batteryBackup: "",
-      },
-      {
-        general_msOfficeProvided: "",
-      },
-      {
-        processor_processorBrand: "",
-      },
-      {
-        processor_processorName: "",
-      },
-      {
-        processor_processorGeneration: "",
-      },
-      {
-        processor_ssd: "",
-      },
-      {
-        processor_ram: "",
-      },
-      {
-        processor_ramType: "",
-      },
-      {
-        processor_hddCapacity: "",
-      },
-      {
-        processor_graphicProcessor: "",
-      },
-      {
-        operatingSystem_operatingSystem: "",
-      },
-      {
-        operatingSystem_systemArchitecture: "",
-      },
-      {
-        displayAndAudioFeatures_touchScreen: "",
-      },
-      {
-        displayAndAudioFeatures_screenSize: "",
-      },
-      {
-        displayAndAudioFeatures_screenResolution: "",
-      },
-      {
-        additionalFeatures: "",
-      },
-      {
-        additionalFeatures: "",
-      },
-      {
-        additionalFeatures: "",
-      },
-      {
-        additionalFeatures: "",
-      },
-      {
-        additionalFeatures: "",
-      },
-      {
-        additionalFeatures: "",
-      },
-      {
-        additionalFeatures: "",
-      },
-      {
-        additionalFeatures: "",
-      },
-      {
-        additionalFeatures: "",
-      },
-      {
-        warranty_warrantySummary: "",
-      },
-      {
-        warranty_warrantyServiceType: "",
-      },
-      {
-        warranty_coveredInWarranty: "",
-      },
-      {
-        warranty_notCoveredInWarranty: "",
-      },
-    ],
-  },
+
   {
     id: 15,
-    name: "",
+    name: "APPLE MacBook Air M1",
     image_url: [
       {
-        image_main: "",
+        image_main:
+          "https://rukminim1.flixcart.com/image/416/416/kp5sya80/screen-guard/tempered-glass/o/v/n/apple-macbook-air-m1-13-3-inch-lightwings-original-imag3gh5xftgbpg3.jpeg?q=70",
       },
       {
-        image: "",
+        image:
+          "https://rukminim1.flixcart.com/image/416/416/kruyw7k0/computer/j/q/o/na-thin-and-light-laptop-apple-original-imag5jt7uezqkefz.jpeg?q=70",
       },
       {
-        image: "",
+        image:
+          "https://rukminim1.flixcart.com/image/416/416/kruyw7k0/computer/p/s/p/na-thin-and-light-laptop-apple-original-imag5jt7zpmhsrpm.jpeg?q=70",
       },
       {
-        image: "",
-      },
-      {
-        image: "",
+        image:
+          "https://rukminim1.flixcart.com/image/416/416/kruyw7k0/computer/h/l/6/na-thin-and-light-laptop-apple-original-imag5jt7fx4gfun4.jpeg?q=70",
       },
     ],
-    price: "",
-    rating: "",
+    price: "₹83,990",
+    rating: "4.7",
     delivery_date: "22nd Oct, Friday",
     delivery_charges: "₹100",
     highlights: [
-      { highlight: "" },
-      { highlight: "" },
-      { highlight: "" },
-      { highlight: "" },
+      { highlight: "Stylish & Portable Thin and Light Laptop" },
+      { highlight: "13.3 inch Quad LED Backlit IPS Display" },
+      {
+        highlight:
+          "227 PPI, 400 nits Brightness, Wide Colour (P3), True Tone Technology",
+      },
+      { highlight: "Light Laptop without Optical Disk Drive" },
     ],
     specifications: [
       {
-        general_salesPackage: "",
+        general_salesPackage:
+          "MacBook Air, 30 W USB-C Power Adapter, USB-C Charge Cable (2m), User Guide, Warranty Documents",
       },
       {
-        general_modelNumber: "",
+        general_modelNumber: "MGN63HN/A",
       },
       {
-        general_partNumber: "",
+        general_partNumber: "MGN63HN/A",
       },
       {
-        general_modelName: "",
+        general_modelName: "NA",
       },
       {
-        general_series: "",
+        general_series: "MacBook Air",
       },
       {
-        general_type: "",
+        general_type: "Thin and Light Laptop",
       },
       {
-        general_suitableFor: "",
+        general_suitableFor: "Processing & Multitasking",
       },
       {
-        general_batteryBackup: "",
+        general_batteryBackup: "Upto 15 hours",
       },
       {
-        general_msOfficeProvided: "",
+        general_msOfficeProvided: "NO",
       },
       {
-        processor_processorBrand: "",
+        processor_processorBrand: "Apple",
       },
       {
-        processor_processorName: "",
+        processor_processorName: "M1",
       },
       {
-        processor_processorGeneration: "",
+        processor_processorGeneration: "NA",
       },
       {
-        processor_ssd: "",
+        processor_ssd: "256 GB",
       },
       {
-        processor_ram: "",
+        processor_ram: "8 GB",
       },
       {
-        processor_ramType: "",
+        processor_ramType: "DDR4",
       },
       {
-        processor_hddCapacity: "",
+        processor_hddCapacity: "NA",
       },
       {
-        processor_graphicProcessor: "",
+        processor_graphicProcessor: "NA",
       },
       {
-        operatingSystem_operatingSystem: "",
+        operatingSystem_operatingSystem: "Mac OS Big Sur",
       },
       {
-        operatingSystem_systemArchitecture: "",
+        operatingSystem_systemArchitecture: "NA",
       },
       {
-        displayAndAudioFeatures_touchScreen: "",
+        displayAndAudioFeatures_touchScreen: "No",
       },
       {
-        displayAndAudioFeatures_screenSize: "",
+        displayAndAudioFeatures_screenSize: "33.78 cm (13.3 inch)",
       },
       {
-        displayAndAudioFeatures_screenResolution: "",
+        displayAndAudioFeatures_screenResolution: "2560 x 1600 Pixel",
       },
       {
-        additionalFeatures: "",
+        additionalFeatures:
+          "Quad LED Backlit IPS Display (227 PPI, 400 nits Brightness, Wide Colour (P3), True Tone Technology)",
       },
       {
-        additionalFeatures: "",
+        additionalFeatures: "Built-in Speakers",
       },
       {
-        additionalFeatures: "",
+        additionalFeatures: "Three-mic Array with Directional Beamforming",
       },
       {
-        additionalFeatures: "",
+        additionalFeatures:
+          "Stereo Speakers, Wide Stereo Sound, Support for Dolby Atmos Playback",
       },
       {
-        additionalFeatures: "",
+        additionalFeatures:
+          "2 x Thunderbolt / USB 4 Ports (Supports Charging, DisplayPort, Thunderbolt 3 (Upto 40 Gbps), USB 3.1 (2nd Gen, Upto 10 Gbps))",
       },
       {
-        additionalFeatures: "",
+        additionalFeatures: "IEEE 802.11ax (Wi-Fi 6)",
       },
       {
-        additionalFeatures: "",
+        additionalFeatures: "Bluetooth v5.0",
       },
       {
-        additionalFeatures: "",
+        additionalFeatures: "Force Touch Trackpad",
       },
       {
-        additionalFeatures: "",
+        additionalFeatures: "Backlit Magic Keyboard",
       },
       {
-        warranty_warrantySummary: "",
+        additionalFeatures: "49.9 WHr Li-polymer Battery",
       },
       {
-        warranty_warrantyServiceType: "",
+        warranty_warrantySummary: "1 Year Limited Warra­nty",
       },
       {
-        warranty_coveredInWarranty: "",
+        warranty_warrantyServiceType: "Onsite",
       },
       {
-        warranty_notCoveredInWarranty: "",
+        warranty_coveredInWarranty: "Manufacturing Defects",
+      },
+      {
+        warranty_notCoveredInWarranty: "Physical Damage",
       },
     ],
   },
