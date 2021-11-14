@@ -2,11 +2,10 @@ const laptop = [
   {
     id: 0,
     name: "DELL INSPIRON Core i3 10th Gen",
+    image_main:
+      "https://rukminim1.flixcart.com/image/416/416/kikluvk0-0/laptop-display/s/4/e/inspiron-3501-dell-original-imafyc7hqnjzg8cm.jpeg?q=70",
+
     image_url: [
-      {
-        image_main:
-          "https://rukminim1.flixcart.com/image/416/416/kikluvk0-0/laptop-display/s/4/e/inspiron-3501-dell-original-imafyc7hqnjzg8cm.jpeg?q=70",
-      },
       {
         image:
           "https://rukminim1.flixcart.com/image/416/416/kikluvk0-0/laptop-display/e/q/f/inspiron-3501-dell-original-imafyc7hh2fmbpgg.jpeg?q=70",
@@ -125,11 +124,9 @@ const laptop = [
   {
     id: 1,
     name: "HP Pavilion Core i7 11th Gen ",
+    image_main:
+      "https://rukminim1.flixcart.com/image/416/416/kl9rssw0/computer/v/n/e/hp-original-imagyfmhb29hsg6g.jpeg?q=70",
     image_url: [
-      {
-        image_main:
-          "https://rukminim1.flixcart.com/image/416/416/kl9rssw0/computer/v/n/e/hp-original-imagyfmhb29hsg6g.jpeg?q=70",
-      },
       {
         image:
           "https://rukminim1.flixcart.com/image/416/416/kl9rssw0/computer/f/r/h/hp-original-imagyfmhy6enbhfq.jpeg?q=70",
@@ -278,11 +275,9 @@ const laptop = [
   {
     id: 2,
     name: "acer Aspire 5 Core i5 11th Gen",
+    image_main:
+      "https://rukminim1.flixcart.com/image/416/416/knhsgi80/computer/u/y/4/na-thin-and-light-laptop-acer-original-imag25zfahpqmyjm.jpeg?q=70",
     image_url: [
-      {
-        image_main:
-          "https://rukminim1.flixcart.com/image/416/416/knhsgi80/computer/u/y/4/na-thin-and-light-laptop-acer-original-imag25zfahpqmyjm.jpeg?q=70",
-      },
       {
         image:
           "https://rukminim1.flixcart.com/image/416/416/kt4ozgw0/computer/u/l/s/aspire-5-thin-and-light-laptop-acer-original-imag6jerbh3dkqmq.jpeg?q=70",
@@ -428,11 +423,9 @@ const laptop = [
   {
     id: 3,
     name: "DELL Inspiron Ryzen 5 Hexa Core 5500U",
+    image_main:
+      "https://rukminim1.flixcart.com/image/416/416/kqe3low0/computer/m/g/r/inspiron-7415-2-in-1-laptop-dell-original-imag4ewka4uhnx4w.jpeg?q=70",
     image_url: [
-      {
-        image_main:
-          "https://rukminim1.flixcart.com/image/416/416/kqe3low0/computer/m/g/r/inspiron-7415-2-in-1-laptop-dell-original-imag4ewka4uhnx4w.jpeg?q=70",
-      },
       {
         image:
           "https://rukminim1.flixcart.com/image/416/416/kqe3low0/computer/g/r/0/inspiron-7415-2-in-1-laptop-dell-original-imag4ewkztzzqfub.jpeg?q=70",
@@ -586,11 +579,9 @@ const laptop = [
   {
     id: 4,
     name: "Lenovo IdeaPad 3 Core i3 11th Gen",
+    image_main:
+      "https://rukminim1.flixcart.com/image/416/416/kruyw7k0/computer/f/i/u/na-thin-and-light-laptop-lenovo-original-imag5jy6fsm2yx4q.jpeg?q=70",
     image_url: [
-      {
-        image_main:
-          "https://rukminim1.flixcart.com/image/416/416/kruyw7k0/computer/f/i/u/na-thin-and-light-laptop-lenovo-original-imag5jy6fsm2yx4q.jpeg?q=70",
-      },
       {
         image:
           "https://rukminim1.flixcart.com/image/416/416/kruyw7k0/computer/e/h/f/na-thin-and-light-laptop-lenovo-original-imag5jy6chya8jjg.jpeg?q=70",
@@ -731,11 +722,9 @@ const laptop = [
   {
     id: 5,
     name: "DELL Vostro 3405 Athlon Dual Core 3050",
+    image_main:
+      "https://rukminim1.flixcart.com/image/416/416/kirr24w0/computer/h/m/y/dell-na-thin-and-light-laptop-original-imafyhm5fac6yfvy.jpeg?q=70",
     image_url: [
-      {
-        image_main:
-          "https://rukminim1.flixcart.com/image/416/416/kirr24w0/computer/h/m/y/dell-na-thin-and-light-laptop-original-imafyhm5fac6yfvy.jpeg?q=70",
-      },
       {
         image:
           "https://rukminim1.flixcart.com/image/416/416/kirr24w0/computer/h/m/y/dell-na-thin-and-light-laptop-original-imafyhm5cnwuyzqu.jpeg?q=70",
@@ -889,12 +878,8 @@ const laptop = [
   {
     id: 6,
     name: "ZOONIS Z Series Core i3",
-    image_url: [
-      {
-        image_main:
-          "https://rukminim1.flixcart.com/image/416/416/jljri4w0/allinone-desktop/4/v/z/zoonis-core-2-duo-3-0-500-gb-4gb-ddr2-ram-15-6-led-original-imaf7spbhtpe4gtb.jpeg?q=70",
-      },
-    ],
+    image_main:
+      "https://rukminim1.flixcart.com/image/416/416/jljri4w0/allinone-desktop/4/v/z/zoonis-core-2-duo-3-0-500-gb-4gb-ddr2-ram-15-6-led-original-imaf7spbhtpe4gtb.jpeg?q=70",
     price: "₹18,999",
     rating: "3.6",
     delivery_date: "22nd Oct, Friday",
@@ -996,11 +981,9 @@ const laptop = [
   {
     id: 7,
     name: "APPLE MacBook Air M1",
+    image_main:
+      "https://rukminim1.flixcart.com/image/416/416/kp5sya80/screen-guard/tempered-glass/o/v/n/apple-macbook-air-m1-13-3-inch-lightwings-original-imag3gh5xftgbpg3.jpeg?q=70",
     image_url: [
-      {
-        image_main:
-          "https://rukminim1.flixcart.com/image/416/416/kp5sya80/screen-guard/tempered-glass/o/v/n/apple-macbook-air-m1-13-3-inch-lightwings-original-imag3gh5xftgbpg3.jpeg?q=70",
-      },
       {
         image:
           "https://rukminim1.flixcart.com/image/416/416/kruyw7k0/computer/j/q/o/na-thin-and-light-laptop-apple-original-imag5jt7uezqkefz.jpeg?q=70",
@@ -1142,14 +1125,13 @@ const laptop = [
       },
     ],
   },
+
   {
     id: 8,
     name: "DELL INSPIRON Core i3 10th Gen",
+    image_main:
+      "https://rukminim1.flixcart.com/image/416/416/kikluvk0-0/laptop-display/s/4/e/inspiron-3501-dell-original-imafyc7hqnjzg8cm.jpeg?q=70",
     image_url: [
-      {
-        image_main:
-          "https://rukminim1.flixcart.com/image/416/416/kikluvk0-0/laptop-display/s/4/e/inspiron-3501-dell-original-imafyc7hqnjzg8cm.jpeg?q=70",
-      },
       {
         image:
           "https://rukminim1.flixcart.com/image/416/416/kikluvk0-0/laptop-display/e/q/f/inspiron-3501-dell-original-imafyc7hh2fmbpgg.jpeg?q=70",
@@ -1268,11 +1250,9 @@ const laptop = [
   {
     id: 9,
     name: "HP Pavilion Core i7 11th Gen ",
+    image_main:
+      "https://rukminim1.flixcart.com/image/416/416/kl9rssw0/computer/v/n/e/hp-original-imagyfmhb29hsg6g.jpeg?q=70",
     image_url: [
-      {
-        image_main:
-          "https://rukminim1.flixcart.com/image/416/416/kl9rssw0/computer/v/n/e/hp-original-imagyfmhb29hsg6g.jpeg?q=70",
-      },
       {
         image:
           "https://rukminim1.flixcart.com/image/416/416/kl9rssw0/computer/f/r/h/hp-original-imagyfmhy6enbhfq.jpeg?q=70",
@@ -1421,11 +1401,9 @@ const laptop = [
   {
     id: 10,
     name: "acer Aspire 5 Core i5 11th Gen",
+    image_main:
+      "https://rukminim1.flixcart.com/image/416/416/knhsgi80/computer/u/y/4/na-thin-and-light-laptop-acer-original-imag25zfahpqmyjm.jpeg?q=70",
     image_url: [
-      {
-        image_main:
-          "https://rukminim1.flixcart.com/image/416/416/knhsgi80/computer/u/y/4/na-thin-and-light-laptop-acer-original-imag25zfahpqmyjm.jpeg?q=70",
-      },
       {
         image:
           "https://rukminim1.flixcart.com/image/416/416/kt4ozgw0/computer/u/l/s/aspire-5-thin-and-light-laptop-acer-original-imag6jerbh3dkqmq.jpeg?q=70",
@@ -1571,11 +1549,9 @@ const laptop = [
   {
     id: 11,
     name: "DELL Inspiron Ryzen 5 Hexa Core 5500U",
+    image_main:
+      "https://rukminim1.flixcart.com/image/416/416/kqe3low0/computer/m/g/r/inspiron-7415-2-in-1-laptop-dell-original-imag4ewka4uhnx4w.jpeg?q=70",
     image_url: [
-      {
-        image_main:
-          "https://rukminim1.flixcart.com/image/416/416/kqe3low0/computer/m/g/r/inspiron-7415-2-in-1-laptop-dell-original-imag4ewka4uhnx4w.jpeg?q=70",
-      },
       {
         image:
           "https://rukminim1.flixcart.com/image/416/416/kqe3low0/computer/g/r/0/inspiron-7415-2-in-1-laptop-dell-original-imag4ewkztzzqfub.jpeg?q=70",
@@ -1729,11 +1705,9 @@ const laptop = [
   {
     id: 12,
     name: "Lenovo IdeaPad 3 Core i3 11th Gen",
+    image_main:
+      "https://rukminim1.flixcart.com/image/416/416/kruyw7k0/computer/f/i/u/na-thin-and-light-laptop-lenovo-original-imag5jy6fsm2yx4q.jpeg?q=70",
     image_url: [
-      {
-        image_main:
-          "https://rukminim1.flixcart.com/image/416/416/kruyw7k0/computer/f/i/u/na-thin-and-light-laptop-lenovo-original-imag5jy6fsm2yx4q.jpeg?q=70",
-      },
       {
         image:
           "https://rukminim1.flixcart.com/image/416/416/kruyw7k0/computer/e/h/f/na-thin-and-light-laptop-lenovo-original-imag5jy6chya8jjg.jpeg?q=70",
@@ -1874,11 +1848,9 @@ const laptop = [
   {
     id: 13,
     name: "DELL Vostro 3405 Athlon Dual Core 3050",
+    image_main:
+      "https://rukminim1.flixcart.com/image/416/416/kirr24w0/computer/h/m/y/dell-na-thin-and-light-laptop-original-imafyhm5fac6yfvy.jpeg?q=70",
     image_url: [
-      {
-        image_main:
-          "https://rukminim1.flixcart.com/image/416/416/kirr24w0/computer/h/m/y/dell-na-thin-and-light-laptop-original-imafyhm5fac6yfvy.jpeg?q=70",
-      },
       {
         image:
           "https://rukminim1.flixcart.com/image/416/416/kirr24w0/computer/h/m/y/dell-na-thin-and-light-laptop-original-imafyhm5cnwuyzqu.jpeg?q=70",
@@ -2032,12 +2004,9 @@ const laptop = [
   {
     id: 14,
     name: "ZOONIS Z Series Core i3",
-    image_url: [
-      {
-        image_main:
-          "https://rukminim1.flixcart.com/image/416/416/jljri4w0/allinone-desktop/4/v/z/zoonis-core-2-duo-3-0-500-gb-4gb-ddr2-ram-15-6-led-original-imaf7spbhtpe4gtb.jpeg?q=70",
-      },
-    ],
+    image_main:
+      "https://rukminim1.flixcart.com/image/416/416/jljri4w0/allinone-desktop/4/v/z/zoonis-core-2-duo-3-0-500-gb-4gb-ddr2-ram-15-6-led-original-imaf7spbhtpe4gtb.jpeg?q=70",
+
     price: "₹18,999",
     rating: "3.6",
     delivery_date: "22nd Oct, Friday",
@@ -2139,11 +2108,261 @@ const laptop = [
   {
     id: 15,
     name: "APPLE MacBook Air M1",
+    image_main:
+      "https://rukminim1.flixcart.com/image/416/416/kp5sya80/screen-guard/tempered-glass/o/v/n/apple-macbook-air-m1-13-3-inch-lightwings-original-imag3gh5xftgbpg3.jpeg?q=70",
     image_url: [
       {
-        image_main:
-          "https://rukminim1.flixcart.com/image/416/416/kp5sya80/screen-guard/tempered-glass/o/v/n/apple-macbook-air-m1-13-3-inch-lightwings-original-imag3gh5xftgbpg3.jpeg?q=70",
+        image:
+          "https://rukminim1.flixcart.com/image/416/416/kruyw7k0/computer/j/q/o/na-thin-and-light-laptop-apple-original-imag5jt7uezqkefz.jpeg?q=70",
       },
+      {
+        image:
+          "https://rukminim1.flixcart.com/image/416/416/kruyw7k0/computer/p/s/p/na-thin-and-light-laptop-apple-original-imag5jt7zpmhsrpm.jpeg?q=70",
+      },
+      {
+        image:
+          "https://rukminim1.flixcart.com/image/416/416/kruyw7k0/computer/h/l/6/na-thin-and-light-laptop-apple-original-imag5jt7fx4gfun4.jpeg?q=70",
+      },
+    ],
+    price: "₹83,990",
+    rating: "4.7",
+    delivery_date: "22nd Oct, Friday",
+    delivery_charges: "₹100",
+    highlights: [
+      { highlight: "Stylish & Portable Thin and Light Laptop" },
+      { highlight: "13.3 inch Quad LED Backlit IPS Display" },
+      {
+        highlight:
+          "227 PPI, 400 nits Brightness, Wide Colour (P3), True Tone Technology",
+      },
+      { highlight: "Light Laptop without Optical Disk Drive" },
+    ],
+    specifications: [
+      {
+        general_salesPackage:
+          "MacBook Air, 30 W USB-C Power Adapter, USB-C Charge Cable (2m), User Guide, Warranty Documents",
+      },
+      {
+        general_modelNumber: "MGN63HN/A",
+      },
+      {
+        general_partNumber: "MGN63HN/A",
+      },
+      {
+        general_modelName: "NA",
+      },
+      {
+        general_series: "MacBook Air",
+      },
+      {
+        general_type: "Thin and Light Laptop",
+      },
+      {
+        general_suitableFor: "Processing & Multitasking",
+      },
+      {
+        general_batteryBackup: "Upto 15 hours",
+      },
+      {
+        general_msOfficeProvided: "NO",
+      },
+      {
+        processor_processorBrand: "Apple",
+      },
+      {
+        processor_processorName: "M1",
+      },
+      {
+        processor_processorGeneration: "NA",
+      },
+      {
+        processor_ssd: "256 GB",
+      },
+      {
+        processor_ram: "8 GB",
+      },
+      {
+        processor_ramType: "DDR4",
+      },
+      {
+        processor_hddCapacity: "NA",
+      },
+      {
+        processor_graphicProcessor: "NA",
+      },
+      {
+        operatingSystem_operatingSystem: "Mac OS Big Sur",
+      },
+      {
+        operatingSystem_systemArchitecture: "NA",
+      },
+      {
+        displayAndAudioFeatures_touchScreen: "No",
+      },
+      {
+        displayAndAudioFeatures_screenSize: "33.78 cm (13.3 inch)",
+      },
+      {
+        displayAndAudioFeatures_screenResolution: "2560 x 1600 Pixel",
+      },
+      {
+        additionalFeatures:
+          "Quad LED Backlit IPS Display (227 PPI, 400 nits Brightness, Wide Colour (P3), True Tone Technology)",
+      },
+      {
+        additionalFeatures: "Built-in Speakers",
+      },
+      {
+        additionalFeatures: "Three-mic Array with Directional Beamforming",
+      },
+      {
+        additionalFeatures:
+          "Stereo Speakers, Wide Stereo Sound, Support for Dolby Atmos Playback",
+      },
+      {
+        additionalFeatures:
+          "2 x Thunderbolt / USB 4 Ports (Supports Charging, DisplayPort, Thunderbolt 3 (Upto 40 Gbps), USB 3.1 (2nd Gen, Upto 10 Gbps))",
+      },
+      {
+        additionalFeatures: "IEEE 802.11ax (Wi-Fi 6)",
+      },
+      {
+        additionalFeatures: "Bluetooth v5.0",
+      },
+      {
+        additionalFeatures: "Force Touch Trackpad",
+      },
+      {
+        additionalFeatures: "Backlit Magic Keyboard",
+      },
+      {
+        additionalFeatures: "49.9 WHr Li-polymer Battery",
+      },
+      {
+        warranty_warrantySummary: "1 Year Limited Warra­nty",
+      },
+      {
+        warranty_warrantyServiceType: "Onsite",
+      },
+      {
+        warranty_coveredInWarranty: "Manufacturing Defects",
+      },
+      {
+        warranty_notCoveredInWarranty: "Physical Damage",
+      },
+    ],
+  },
+
+  {
+    id: 16,
+    name: "ZOONIS Z Series Core i3",
+    image_main:
+      "https://rukminim1.flixcart.com/image/416/416/jljri4w0/allinone-desktop/4/v/z/zoonis-core-2-duo-3-0-500-gb-4gb-ddr2-ram-15-6-led-original-imaf7spbhtpe4gtb.jpeg?q=70",
+
+    price: "₹18,999",
+    rating: "3.6",
+    delivery_date: "22nd Oct, Friday",
+    delivery_charges: "₹100",
+    highlights: [
+      { highlight: "4 GB DDR3/500 GB/Windows 10 Pro/1 GB/18.5 Inch Screen" },
+      { highlight: "Intel Core i3" },
+      { highlight: "HDD Capacity 500 GB" },
+    ],
+    specifications: [
+      {
+        general_salesPackage:
+          "CPU,AOC 18.5 LED,POWER CORD,KEYBOARD MOUSE, DRIVER CD",
+      },
+      {
+        general_modelNumber: "NA",
+      },
+      {
+        general_partNumber: "ZOOGYH0027",
+      },
+      {
+        general_modelName: "Core i5 65",
+      },
+      {
+        general_series: "Z Series",
+      },
+      {
+        general_type: "NA",
+      },
+      {
+        general_suitableFor: "NA",
+      },
+      {
+        general_batteryBackup: "Power Supply required",
+      },
+      {
+        general_msOfficeProvided: "NA",
+      },
+      {
+        processor_processorBrand: "Intel",
+      },
+      {
+        processor_processorName: "Core i3",
+      },
+      {
+        processor_processorGeneration: "NA",
+      },
+      {
+        processor_ssd: "No",
+      },
+      {
+        processor_ram: "4 GB",
+      },
+      {
+        processor_ramType: "DDR3",
+      },
+      {
+        processor_hddCapacity: "500 GB",
+      },
+      {
+        processor_graphicProcessor: "NA",
+      },
+      {
+        operatingSystem_operatingSystem: "Windows 10 Pro",
+      },
+      {
+        operatingSystem_systemArchitecture: "64 Bit",
+      },
+      {
+        displayAndAudioFeatures_touchScreen: "No",
+      },
+      {
+        displayAndAudioFeatures_screenSize: "18.5 Inch Screen",
+      },
+      {
+        displayAndAudioFeatures_screenResolution: "NA",
+      },
+      {
+        additionalFeatures: "1 GB Graphic Memory",
+      },
+      {
+        additionalFeatures: "450 W Power Consumption",
+      },
+      {
+        warranty_warrantySummary: "6 month",
+      },
+      {
+        warranty_warrantyServiceType: "Onsite",
+      },
+      {
+        warranty_coveredInWarranty: "NA",
+      },
+      {
+        warranty_notCoveredInWarranty: "NA",
+      },
+    ],
+  },
+
+  {
+    id: 17,
+    name: "APPLE MacBook Air M1",
+    image_main:
+      "https://rukminim1.flixcart.com/image/416/416/kp5sya80/screen-guard/tempered-glass/o/v/n/apple-macbook-air-m1-13-3-inch-lightwings-original-imag3gh5xftgbpg3.jpeg?q=70",
+    image_url: [
       {
         image:
           "https://rukminim1.flixcart.com/image/416/416/kruyw7k0/computer/j/q/o/na-thin-and-light-laptop-apple-original-imag5jt7uezqkefz.jpeg?q=70",

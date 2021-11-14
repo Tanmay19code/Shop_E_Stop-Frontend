@@ -8,14 +8,17 @@ function Trial() {
         return (
           <>
             <p>
-              {element.specifications.map((spec) => {
-                {
+              {element.image_url.map((img) => {
+                return <p>{img.image}</p>
+              })}
+              {/* {element.specifications.map((spec) => {
+                
                   // spec.map((gen) => {
                     return <p>{spec.additionalFeatures}</p>;
                   // });
-                }
-              })}
-            </p>
+                
+              })} */}
+            </p><br/>
 
             {/* {element.highlights.map((e) => {
               return <>

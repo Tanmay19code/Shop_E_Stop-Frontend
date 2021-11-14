@@ -42,9 +42,9 @@ function Navbar() {
           <img src={logo} alt="logo" className="navbar-logo" />
         </Link>
         <ul className="navbar-ul">
-          <li>
+          {/* <li>
             <BiCategory className="category" onClick={toggleCategory}/>
-          </li>
+          </li> */}
           <li>
             <Link to="/cart" onClick={disableMenu}>
               <GiShoppingCart className="cart" />
