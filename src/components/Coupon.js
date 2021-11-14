@@ -2,7 +2,7 @@ import React from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-function Coupon() {
+function Coupon(props) {
   const copyCode = (event) => {
     event.target.style.backgroundColor = "#ABCCEF";
     let code = event.target.textContent;
@@ -20,7 +20,7 @@ function Coupon() {
         hideProgressBar={true}
         closeOnClickrtl={true}
       />
-      <p className="coupon-title" id="valid">
+      <p className="coupon-title" id={props.validity}>
         ₹500 off on Redmi MI Note 3
       </p>
       <hr />

@@ -9,6 +9,7 @@ import MyOrders from "./pages/MyOrders";
 import MyCoupons from "./pages/MyCoupons";
 import ProductPage from "./pages/ProductPage";
 import Trial from "./components/Trial";
+import AddProduct from "./pages/AddProduct";
 
 function App() {
   return (
@@ -39,6 +40,9 @@ function App() {
           </Route>
           <Route exact path="/trial">
             <Trial/>
+          </Route>
+          <Route exact path="/addProduct">
+            <AddProduct/>
           </Route>
         </Switch>
       </Router>

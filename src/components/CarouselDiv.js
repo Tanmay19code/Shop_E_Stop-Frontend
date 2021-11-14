@@ -1,5 +1,7 @@
 import React from "react";
-import car_img from "../images/car3.jpg";
+import car_img1 from "../images/car1.jpg";
+import car_img2 from "../images/car2.jpg";
+import car_img3 from "../images/car3.jpg";
 import Carousel from "react-elastic-carousel";
 import styled from "styled-components";
 
@@ -25,13 +27,13 @@ function CarouselDiv() {
         }}
       >
         <div className="carousel-div">
-          <img src={car_img} alt="carousel image" className="carousel-image" />
+          <img src={car_img1} alt="carousel image" className="carousel-image" />
         </div>
         <div className="carousel-div">
-          <img src={car_img} alt="carousel image" className="carousel-image" />
+          <img src={car_img2} alt="carousel image" className="carousel-image" />
         </div>
         <div className="carousel-div">
-          <img src={car_img} alt="carousel image" className="carousel-image" />
+          <img src={car_img3} alt="carousel image" className="carousel-image" />
         </div>
       </Carousel>
     </div>

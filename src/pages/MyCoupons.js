@@ -10,30 +10,32 @@ function MyCoupons() {
       </div>
       <p className="coupon-header">Valid Coupons :</p>
       <div className="coupon-holder">
-          <Coupon/>
-          <Coupon/>
-          <Coupon/>
-          <Coupon/>
-          <Coupon/>
-          <Coupon/>
-          <Coupon/>
-          <Coupon/>
-          <Coupon/>
-          <Coupon/>
+          <Coupon validity="valid"/>
+          <Coupon validity="valid"/>
+          <Coupon validity="valid"/>
+          <Coupon validity="valid"/>
+          <Coupon validity="valid"/>
+          <Coupon validity="valid"/>
+          <Coupon validity="valid"/>
+          <Coupon validity="valid"/>
+          <Coupon validity="valid"/>
+          <Coupon validity="valid"/>
       </div>
       <p className="coupon-header">Expired Coupons :</p>
       <div className="coupon-holder">
-          <Coupon/>
-          <Coupon/>
-          <Coupon/>
-          <Coupon/>
-          <Coupon/>
-          <Coupon/>
-          <Coupon/>
-          <Coupon/>
-          <Coupon/>
-          <Coupon/>
+          <Coupon validity="expired"/>
+          <Coupon validity="expired"/>
+          <Coupon validity="expired"/>
+          <Coupon validity="expired"/>
+          <Coupon validity="expired"/>
+          <Coupon validity="expired"/>
+          <Coupon validity="expired"/>
+          <Coupon validity="expired"/>
+          <Coupon validity="expired"/>
+          <Coupon validity="expired"/>
       </div>
+      <br/>
+      <br/>
     </div>
   );
 }
