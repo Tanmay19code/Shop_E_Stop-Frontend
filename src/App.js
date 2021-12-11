@@ -10,6 +10,7 @@ import MyCoupons from "./pages/MyCoupons";
 import ProductPage from "./pages/ProductPage";
 import Trial from "./components/Trial";
 import AddProduct from "./pages/AddProduct";
+import Login from "./pages/Login";
 
 function App() {
   return (
@@ -43,6 +44,9 @@ function App() {
           </Route>
           <Route exact path="/addProduct">
             <AddProduct/>
+          </Route>
+          <Route exact path="/login">
+            <Login/>
           </Route>
         </Switch>
       </Router>
