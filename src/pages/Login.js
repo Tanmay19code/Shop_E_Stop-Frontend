@@ -14,7 +14,7 @@ const Login = () => {
           </div>
           {/* <br /> */}
           <input type="button" value="LOGIN" id="login-button" />
-          <Link to="/signup"><p className="create-account-button">New here? Create Account</p></Link>
+          <Link to="/signup" className="create-account-button-link"><p className="create-account-button">New here? Create Account</p></Link>
         </form>
       </div>
     </div>

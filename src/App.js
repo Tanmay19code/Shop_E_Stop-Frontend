@@ -11,6 +11,7 @@ import ProductPage from "./pages/ProductPage";
 import Trial from "./components/Trial";
 import AddProduct from "./pages/AddProduct";
 import Login from "./pages/Login";
+import Signup from "./pages/Signup";
 
 function App() {
   return (
@@ -47,6 +48,9 @@ function App() {
           </Route>
           <Route exact path="/login">
             <Login/>
+          </Route>
+          <Route exact path="/signup">
+            <Signup/>
           </Route>
         </Switch>
       </Router>

@@ -119,6 +119,7 @@ Navbar
 .navbar-profile-menu-disabled {
     /* display: none; */
     visibility: hidden;
+    animation: menu-close-right 1s;
 }
 
 .navbar-profile-menu-enabled {
@@ -131,6 +132,7 @@ Navbar
     z-index: 2;
     border: 1px solid #000000;
     /* border-radius: 10px; */
+    animation: menu-open-left 1s;
 }
 
 .navbar-profile-menu-enabled ul {
@@ -969,7 +971,8 @@ LOGIN / SIGNUP
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 10%;
+    padding-top: 50px;
+    margin-bottom: 40px;
 }
 
 .form-container form {
@@ -1020,13 +1023,43 @@ LOGIN / SIGNUP
     background-color: rgb(174, 174, 250);
 }
 
+.signup-button-class {
+    margin-top: 10px;
+    font-size: 15px;
+    color: #000;
+    width: 180px;
+    padding: 8px 10px 8px 10px;
+    border-radius: 2px;
+    /* border: 0.5px solid #000; */
+    border: none;
+    background-color: #f1f1f1;
+    outline: none;
+}
+
+#signup-button {
+    display: auto;
+    width: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+#signup-button:focus {
+    outline: none;
+}
+
+#signup-button:hover {
+    cursor: pointer;
+    background-color: rgb(174, 174, 250);
+}
+
 .form-logo {
-    height: 70px;
-    width: 100px;
+    height: 90px;
+    width: 120px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 
 .form-forget-password {
@@ -1050,11 +1083,17 @@ LOGIN / SIGNUP
     color: #00f;
     text-decoration: underline;
 }
-
+.create-account-button-link{
+    width:fit-content;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
 .create-account-button {
     margin-top: 5px;
     font-size: 10px;
     margin-right: 0px;
+    width: fit-content;
     /* display: block; */
     text-align: center;
     margin: 30px auto 0px auto;
@@ -1070,6 +1109,93 @@ LOGIN / SIGNUP
     text-decoration: underline;
 }
 
+
+
+.form-container-signup {
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+    margin-bottom: 40px;
+}
+
+.form-container-signup form {
+    box-shadow: 0 0 5px #000;
+    border-radius: 10px;
+    padding: 5%;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container-signup form .form-body .form-body-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container-signup form .form-body .form-body-left input {
+    margin-top: 10px;
+    font-size: 15px;
+    color: #000;
+    width: 180px;
+    padding: 8px 10px 8px 10px;
+    border-radius: 2px;
+    /* border: 0.5px solid #000; */
+    border: none;
+    background-color: #f1f1f1;
+    outline: none;
+    /* margin-bottom: 20px; */
+}
+
+.form-container-signup form .form-body .form-body-left input:hover {
+    outline: 1px solid rgb(190, 175, 255);
+}
+
+.form-container-signup form .form-body .form-body-left input:focus {
+    outline: 1px solid #00f;
+}
+
+
+.form-container-signup form .form-body .form-body-left input:hover {
+    outline: 1px solid rgb(190, 175, 255);
+}
+
+.form-container-signup form .form-body .form-body-left input :focus {
+    outline: 1px solid #00f;
+}
+
+.form-body-right {
+    width: fit-content;
+    margin-top: 20px;
+}
+
+.input-field {
+    width: fit-content;
+    display: flex;
+}
+
+.input-field p {
+    width: 200px;
+}
+
+#signup-address-holder{
+    margin-top:0px;
+    margin-right: 0px;
+    width:80%;
+}
+.signup-form-address-input{
+    margin-top: 10px;
+    font-size: 15px;
+    color: #000;
+    width: 180px;
+    padding: 8px 10px 8px 10px;
+    border-radius: 2px;
+    /* border: 0.5px solid #000; */
+    border: none;
+    background-color: #f1f1f1;
+    outline: none;
+}
 /**********************************/
 
 /******  min-width :425px  ********/
@@ -1505,7 +1631,16 @@ LOGIN / SIGNUP
         width: 400px;
     }
 
+    .form-container-signup form .form-body .form-body-left input {
+        font-size: 20px;
+        width: 400px;
+    }
+
     #login-button {
+        width: 100px;
+    }
+
+    #signup-button {
         width: 100px;
     }
 
@@ -1515,6 +1650,15 @@ LOGIN / SIGNUP
 
     .form-forget-password {
         font-size: 12px;
+    }
+
+    .form-body {
+        display: flex;
+    }
+
+    .form-body-right {
+        margin-left: 20px;
+        margin-top: 7px;
     }
 }
 
@@ -1744,5 +1888,50 @@ LOGIN / SIGNUP
         padding: 10px;
         font-size: 23px;
         margin: 10px;
+    }
+}
+
+@keyframes menu-open-left {
+    from{right:0}
+    0% {
+        opacity: 0
+    }
+
+    25% {
+        opcaity: 0.25
+    }
+
+    50% {
+        opcaity: 0.5
+    }
+
+    75% {
+        opcaity: 0.75
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+@keyframes menu-close-right {
+    to{right:0}
+    0% {
+        opacity: 1
+    }
+
+    25% {
+        opcaity: 0.75
+    }
+
+    50% {
+        opcaity: 0.5
+    }
+
+    75% {
+        opcaity: 0.25
+    }
+
+    100% {
+        opacity: 0
     }
 }
