@@ -1,6 +1,6 @@
 import React,{ useState} from "react";
 import logo from "../images/shop_e_stop_logo_2.png";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import { useDispatch } from 'react-redux';
 import { Redirect } from 'react-router';
 import refreshTokenSetup from '../utils/refreshToken';
@@ -16,14 +16,15 @@ const Login = () => {
   const onChange = (e) => setFormData({ ...formData, [e.target.name]: e.target.value });
 
   const dispatch = useDispatch(null);
-
+  const history = useHistory();
    const onSubmit = async (e) => {
     e.preventDefault();
-    dispatch(login(formData.email, formData.password));
-    // setTimeout(() => {
-    //   window.location.reload(false);
-    // }, 2);
-    // return <Redirect to="/" />;
+    dispatch(login(formData.email, formData.password)).then(() => {
+      history.push('/');
+      setTimeout(() => {
+        window.location.reload(false);
+      }, 3);
+    });
   };
 
   return (

@@ -1,4 +1,4 @@
-import axios from 'axios';
+import axios from "axios";
 import {
   AUTH_ERROR,
   LOGIN_FAIL,
@@ -7,8 +7,8 @@ import {
   REGISTER_FAIL,
   REGISTER_SUCCESS,
   USER_LOADED,
-} from '../constants/authTypes';
-import setAuthToken from '../utils/setAuthToken';
+} from "../constants/authTypes";
+import setAuthToken from "../utils/setAuthToken";
 
 // Load User
 export const loadUser = () => async (dispatch) => {
@@ -17,7 +17,7 @@ export const loadUser = () => async (dispatch) => {
   }
 
   try {
-    const res = await axios.post('http://localhost:5000/api/auth/getuser');
+    const res = await axios.post("http://localhost:5000/api/auth/getuser");
 
     dispatch({
       type: USER_LOADED,
@@ -38,19 +38,21 @@ export const register =
 
     const config = {
       headers: {
-        'Content-Type': 'application/json',
+        "Content-Type": "application/json",
       },
     };
 
     try {
-      const res = await axios.post('http://localhost:5000/auth/create', body, config);
+      const res = await axios.post(
+        "http://localhost:5000/auth/create",
+        body,
+        config
+      );
 
       dispatch({
         type: REGISTER_SUCCESS,
         payload: res.data,
       });
-
-      localStorage.setItem('token', res.data.token);
 
       // dispatch(loadUser());
     } catch (error) {
@@ -70,34 +72,39 @@ export const register =
 export const login = (email, password) => async (dispatch) => {
   const config = {
     headers: {
-      'Content-Type': 'application/json',
+      "Content-Type": "application/json",
     },
   };
 
   const body = JSON.stringify({ email, password });
 
-  try {
-    const res = await axios.post('http://localhost:5000/api/auth/login', body, config);
+  // try {
+  const res = await axios.post(
+    "http://localhost:5000/api/auth/login",
+    body,
+    config
+  );
 
-    dispatch({
-      type: LOGIN_SUCCESS,
-      payload: res.data,
-    });
+  dispatch({
+    type: LOGIN_SUCCESS,
+    payload: res.data,
+  });
 
-    localStorage.setItem('token', res.data.token);
+  // localStorage.setItem('token', res.data.token);
 
-    // dispatch(loadUser());
-  } catch (error) {
-    const { errors } = error.response.data;
+  // dispatch(loadUser());
+  // }
+  // catch (error) {
+  //   const { errors } = error.response.data;
 
-    // if (errors) {
-    //   errors.forEach((error) => dispatch(setAlert(error.msg, 'danger')));
-    // }
+  //   // if (errors) {
+  //   //   errors.forEach((error) => dispatch(setAlert(error.msg, 'danger')));
+  //   // }
 
-    dispatch({
-      type: LOGIN_FAIL,
-    });
-  }
+  //   dispatch({
+  //     type: LOGIN_FAIL,
+  //   });
+  // }
 };
 
 // Logout / Clear Profile

@@ -6,53 +6,71 @@ import {
   REGISTER_FAIL,
   REGISTER_SUCCESS,
   USER_LOADED,
-} from '../constants/authTypes.js';
+} from '../../constants/authTypes.js';
+import jwtDecode from 'jwt-decode';
 
 const initialState = {
-  authType: null,
-  token: localStorage.getItem('token'),
+  token: null,
   isAuthenticated: null,
   loading: true,
   auth: null,
+  _id: null,
 };
+
+
 
 export default function (state = initialState, action) {
   const { type, payload } = action;
 
   switch (type) {
     case USER_LOADED:
+      var user = jwtDecode(payload?.authtoken);
       return {
         ...state,
         isAuthenticated: true,
         loading: false,
         auth: payload,
+        token: payload?.authtoken,
+        _id: user !== null && user?._id,
       };
 
     case REGISTER_SUCCESS:
-      localStorage.setItem('authType', 'jwtAuth');
-    case LOGIN_SUCCESS:
-      localStorage.setItem('authType', 'jwtAuth');
-      console.log(payload);
+      user = jwtDecode(payload?.authtoken);
       return {
         ...state,
         ...payload,
         isAuthenticated: true,
         loading: false,
+        auth: payload,
+        token: payload?.authtoken,
+        _id: user !== null && user?._id,
       };
-
-    case REGISTER_FAIL:
-    case AUTH_ERROR:
-    case LOGIN_FAIL:
-    case LOGOUT:
-      localStorage.removeItem('token');
-      localStorage.removeItem('authType');
+    case LOGIN_SUCCESS:
+       user = jwtDecode(payload?.authtoken);
       return {
         ...state,
-        token: null,
+        ...payload,
+        isAuthenticated: true,
+        loading: false,
+        auth: payload,
+        token: payload?.authtoken,
+        _id: user !== null && user?._id,
+      };
+    case REGISTER_FAIL:
+      return state;
+    case AUTH_ERROR:
+      return state;
+    case LOGIN_FAIL:
+      return state;
+    case LOGOUT:
+      return {
+        ...state,
         isAuthenticated: false,
         loading: false,
+        auth: null,
+        token: null,
+        _id: null,
       };
-
     default:
       return state;
   }

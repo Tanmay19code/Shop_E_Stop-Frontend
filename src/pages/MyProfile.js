@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import {useSelector} from 'react-redux'
 import ProfileDetails from "../components/ProfileDetails";
 import { Link } from "react-router-dom";
 import { RiArrowDownSLine } from "react-icons/ri";
@@ -6,6 +7,9 @@ import { RiArrowUpSLine } from "react-icons/ri";
 
 function MyProfile() {
   const [disabled, setDisabled] = useState(false);
+  // const auth = useSelector(state => state.auth)
+
+  // const token = auth.token
 
   const toggleVisibility = () => {
     if (disabled) {
