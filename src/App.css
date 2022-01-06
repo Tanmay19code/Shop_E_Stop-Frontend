@@ -1083,12 +1083,14 @@ LOGIN / SIGNUP
     color: #00f;
     text-decoration: underline;
 }
-.create-account-button-link{
-    width:fit-content;
-    display:block;
+
+.create-account-button-link {
+    width: fit-content;
+    display: block;
     margin-left: auto;
     margin-right: auto;
 }
+
 .create-account-button {
     margin-top: 5px;
     font-size: 10px;
@@ -1134,6 +1136,10 @@ LOGIN / SIGNUP
     flex-direction: column;
 }
 
+.form-body-left {
+    width: 50%;
+}
+
 .form-container-signup form .form-body .form-body-left input {
     margin-top: 10px;
     font-size: 15px;
@@ -1156,18 +1162,10 @@ LOGIN / SIGNUP
     outline: 1px solid #00f;
 }
 
-
-.form-container-signup form .form-body .form-body-left input:hover {
-    outline: 1px solid rgb(190, 175, 255);
-}
-
-.form-container-signup form .form-body .form-body-left input :focus {
-    outline: 1px solid #00f;
-}
-
 .form-body-right {
     width: fit-content;
-    margin-top: 20px;
+    /* margin-top: 20px; */
+    margin-left: 20px;
 }
 
 .input-field {
@@ -1179,23 +1177,96 @@ LOGIN / SIGNUP
     width: 200px;
 }
 
-#signup-address-holder{
-    margin-top:0px;
+.signup-address-holder {
+    margin-top: 0px;
     margin-right: 0px;
-    width:80%;
+    /* width:80%; */
 }
-.signup-form-address-input{
+
+.signup-address-holder-input {
+    display: flex;
+}
+
+.signup-address-holder-input input {
+    width: 100%;
     margin-top: 10px;
-    font-size: 15px;
+    font-size: 20px;
     color: #000;
-    width: 180px;
+    /* width: 180px; */
     padding: 8px 10px 8px 10px;
     border-radius: 2px;
     /* border: 0.5px solid #000; */
     border: none;
     background-color: #f1f1f1;
     outline: none;
+    /* margin-bottom: 20px; */
 }
+
+.signup-address-holder-input input:hover {
+    outline: 1px solid rgb(190, 175, 255);
+}
+
+.signup-address-holder-input input:focus {
+    outline: 1px solid #00f;
+}
+
+.signup-address-holder-input-2 {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.highlights input {
+    width: 70%;
+    margin-top: 10px;
+    font-size: 20px;
+    color: #000;
+    /* width: 180px; */
+    padding: 8px 10px 8px 10px;
+    border-radius: 2px;
+    /* border: 0.5px solid #000; */
+    border: none;
+    background-color: #f1f1f1;
+    /* outline: none; */
+    outline: 1px solid rgb(190, 175, 255);
+    /* margin-bottom: 20px; */
+}
+
+
+.add-specifications {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.add-specifications-item {
+    display: flex;
+}
+
+.add-specifications-item input {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #000;
+    /* width: 180px; */
+    padding: 8px 10px 8px 10px;
+    border-radius: 2px;
+    /* border: 0.5px solid #000; */
+    border: none;
+    background-color: #f1f1f1;
+    /* outline: none; */
+    outline: 1px solid rgb(190, 175, 255);
+    /* margin-bottom: 20px; */
+}
+
+.add-specifications-item-key {
+    width: 40%;
+    margin-right: 30px;
+}
+
+.add-specifications-item-value {
+    width: 60%;
+}
+
+
 /**********************************/
 
 /******  min-width :425px  ********/
@@ -1657,8 +1728,8 @@ LOGIN / SIGNUP
     }
 
     .form-body-right {
-        margin-left: 20px;
-        margin-top: 7px;
+        /* margin-left: 20px;
+        margin-top: 7px; */
     }
 }
 
@@ -1892,7 +1963,10 @@ LOGIN / SIGNUP
 }
 
 @keyframes menu-open-left {
-    from{right:0}
+    from {
+        right: 0
+    }
+
     0% {
         opacity: 0
     }
@@ -1913,8 +1987,12 @@ LOGIN / SIGNUP
         opacity: 1
     }
 }
+
 @keyframes menu-close-right {
-    to{right:0}
+    to {
+        right: 0
+    }
+
     0% {
         opacity: 1
     }

@@ -9,58 +9,48 @@ const Signup = () => {
           <img src={logo} alt="Logo" className="form-logo" />
           <div className="form-body">
             <div className="form-body-left">
-              <input type="text" autocomplete="abcdef" placeholder="Enter your name" />
-              <input type="email" autocomplete="abcdef" placeholder="Enter your email address" />
-              <input type="number" autocomplete="abcdef" placeholder="Enter your mobile number" />
+              <input
+                type="text"
+                autocomplete="abcdef"
+                placeholder="Enter your name"
+              />
+              <input
+                type="email"
+                autocomplete="abcdef"
+                placeholder="Enter your email address"
+              />
+              <input
+                type="number"
+                autocomplete="abcdef"
+                placeholder="Enter your mobile number"
+              />
               <input type="password" placeholder="Enter your password" />
               <input type="password" placeholder="Re-enter your password" />
             </div>
             <div className="form-body-right">
-              <div 
-              className="add-address-holder" 
-              id="signup-address-holder">
- 
-                <div className="add-address-holder-item">
+              <div className="signup-address-holder">
+                <div className="signup-address-holder-input">
                   <input
                     type="address"
                     placeholder="Flat no., Building name, Street"
-                    className="input-line-2-3"
-                    // className="signup-form-address-input"
                   />
                 </div>
-                <div className="add-address-holder-item">
+                <div className="signup-address-holder-input">
                   <input
                     type="address"
                     placeholder="Locality, Area, town /taluka /village"
-                    className="input-line-2-3"
-                    // className="signup-form-address-input"
                   />
                 </div>
-                <div className="add-address-holder-item">
-                  <input
-                    type="text"
-                    placeholder="City"
-                    className="input-line-1-4"
-                    // className="signup-form-address-input"
-                  ></input>
-                  <input
-                    type="text"
-                    placeholder="District"
-                    className="input-line-1-4"
-                    // className="signup-form-address-input"
-                  ></input>
-                  <input
-                    type="text"
-                    placeholder="State"
-                    className="input-line-1-4"
-                    // className="signup-form-address-input"
-                  ></input>
+                <div className="signup-address-holder-input">
+                  <input type="text" placeholder="City"></input>
+                  <input type="text" className="signup-address-holder-input-2" placeholder="District"></input>
+                  <input type="text" placeholder="State"></input>
                 </div>
               </div>
             </div>
           </div>
           <input
-            type="button"
+            type="submit"
             value="SIGNUP"
             id="signup-button"
             className="signup-button-class"

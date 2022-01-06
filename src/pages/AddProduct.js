@@ -1,9 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 // import laptop from "../images/laptop1.jpg";
 import uploadImage from "../images/upload.png";
 // import { AiFillStar } from "react-icons/ai";
 
-function AddProduct() {
+const AddProduct = () => {
   var loadFile = function (event) {
     var image = document.getElementById("output-display");
     image.src = URL.createObjectURL(event.target.files[0]);
@@ -63,14 +63,6 @@ function AddProduct() {
         </div>
       </div>
       <div className="product-container-right">
-        {/* <div className="product-title-description laptop-display">
-          <ul>
-            <li>Core i3 10th Gen</li>
-            <li>8 GB/1 TB HDD</li>
-            <li>Windows 10 Home</li>
-            <li>15.6 inch, Black, With MS Office</li>
-          </ul>
-        </div> */}
         <div className="laptop-display">
           <textarea
             cols="60"
@@ -80,250 +72,69 @@ function AddProduct() {
             className="description-input"
           />
         </div>
-        {/* <div className="product-expected-delivery">
-          <hr />
-          <p id="product-details-header">Expected Delivery :</p>
-          <p id="product-details-delivery">
-            Delivery expected by <strong>Tue, 10th Aug</strong>
-          </p>
-          <p id="product-details-delivery">Delivery Charges: ₹100</p>
-        </div> */}
         <div className="product-details-description">
           <hr />
           <p id="product-details-header">Highlights :</p>
-          {/* <ul>
-            <li>Pre-installed Genuine Windows 10 OS</li>
-            <li>Preloaded with MS Office</li>
-            <li>Light Laptop without Optical Disk Drive</li>
-            <li>15.6 inch</li>
-          </ul> */}
-          <textarea
-            cols="60"
-            rows="8"
-            placeholder="Enter the highlights here"
-            maxLength="100"
-            className="description-input"
-          />
+          <div className="highlights">
+            <input id="highlight1" />
+            <br />
+            <input id="highlight2" />
+            <br />
+            <input id="highlight3" />
+            <br />
+            <input id="highlight4" />
+            <br />
+            <input id="highlight5" />
+            <br />
+            <br />
+          </div>
         </div>
-        <div className="product-details-specifications">
+
+        <div className="product-details-description">
           <hr />
           <p id="product-details-header">Specifications :</p>
-          <ul id="product-specification-ul">
-            <li>
-              General
-              <ul id="specification-individual">
-                <li>
-                  <p className="specification-individual-left">Sales Package</p>
-                  <p className="specification-individual-right">
-                    Laptop, Power Adaptor, User Guide, Warranty Documents
-                  </p>
-                </li>
-                <li>
-                  <p className="specification-individual-left">Model Number</p>
-                  <p className="specification-individual-right">
-                    Inspiron 3501
-                  </p>
-                </li>
-                <li>
-                  <p className="specification-individual-left">Part Number</p>
-                  <p className="specification-individual-right">
-                    D560288WIN9S/D560365WIN9
-                  </p>
-                </li>
-                <li>
-                  <p className="specification-individual-left">Model Name</p>
-                  <p className="specification-individual-right">
-                    INSPIRON 3501
-                  </p>
-                </li>
-                <li>
-                  <p className="specification-individual-left">Series</p>
-                  <p className="specification-individual-right">INSPIRON</p>
-                </li>
-                <li>
-                  <p className="specification-individual-left">Color</p>
-                  <p className="specification-individual-right">Black</p>
-                </li>
-                <li>
-                  <p className="specification-individual-left">Type</p>
-                  <p className="specification-individual-right">Laptop</p>
-                </li>
-                <li>
-                  <p className="specification-individual-left">Suitable For</p>
-                  <p className="specification-individual-right">
-                    Processing & Multitasking
-                  </p>
-                </li>
-                <li>
-                  <p className="specification-individual-left">
-                    Battery Backup
-                  </p>
-                  <p className="specification-individual-right">Upto 6hrs</p>
-                </li>
-                <li>
-                  <p className="specification-individual-left">
-                    MS Office Provided
-                  </p>
-                  <p className="specification-individual-right">Yes</p>
-                </li>
-              </ul>
-            </li>
-            <li>
-              Processor And Memory Features
-              <ul id="specification-individual">
-                <li>
-                  <p className="specification-individual-left">
-                    Processor Brand
-                  </p>
-                  <p className="specification-individual-right">Intel</p>
-                </li>
-                <li>
-                  <p className="specification-individual-left">
-                    Processor Name
-                  </p>
-                  <p className="specification-individual-right">Core i3</p>
-                </li>
-                <li>
-                  <p className="specification-individual-left">
-                    Processor Generation
-                  </p>
-                  <p className="specification-individual-right">10th Gen</p>
-                </li>
-                <li>
-                  <p className="specification-individual-left">SSD</p>
-                  <p className="specification-individual-right">No</p>
-                </li>
-                <li>
-                  <p className="specification-individual-left">RAM</p>
-                  <p className="specification-individual-right">8 GB</p>
-                </li>
-                <li>
-                  <p className="specification-individual-left">RAM Type</p>
-                  <p className="specification-individual-right">DDR4</p>
-                </li>
-                <li>
-                  <p className="specification-individual-left">HDD Capacity</p>
-                  <p className="specification-individual-right">1 TB</p>
-                </li>
-                <li>
-                  <p className="specification-individual-left">
-                    Graphic Processor
-                  </p>
-                  <p className="specification-individual-right">
-                    Intel Integrated Intel Integrated UHD
-                  </p>
-                </li>
-              </ul>
-            </li>
-            <li>
-              Operating
-              <ul id="specification-individual">
-                <li>
-                  <p className="specification-individual-left">
-                    Operating System
-                  </p>
-                  <p className="specification-individual-right">
-                    Windows 10 Home
-                  </p>
-                </li>
-                <li>
-                  <p className="specification-individual-left">
-                    System Architecture
-                  </p>
-                  <p className="specification-individual-right">64 bit</p>
-                </li>
-              </ul>
-            </li>
-            <li>
-              Display And Audio Features
-              <ul id="specification-individual">
-                <li>
-                  <p className="specification-individual-left">Touchscreen</p>
-                  <p className="specification-individual-right">No</p>
-                </li>
-                <li>
-                  <p className="specification-individual-left">Screen Size</p>
-                  <p className="specification-individual-right">
-                    39.62 cm (15.6 inch)
-                  </p>
-                </li>
-                <li>
-                  <p className="specification-individual-left">
-                    Screen Resolution
-                  </p>
-                  <p className="specification-individual-right">
-                    1980 x 1080 pixel
-                  </p>
-                </li>
-              </ul>
-            </li>
-            <li>
-              Connectivity Features
-              <ul id="specification-individual">
-                <li>
-                  <p className="specification-individual-left">Bluetooth</p>
-                  <p className="specification-individual-right">v5.0</p>
-                </li>
-              </ul>
-            </li>
-            <li>
-              Additional Features
-              <div
-                className="product-details-description"
-                id="additionalFeatures"
-              >
-                <ul>
-                  <li>
-                    {/* <p className="specification-individual-left">Disk Drive</p>
-                  <p className="specification-individual-right">
-                    Not Available
-                  </p> */}
-                    Disk Drive not available
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li>
-              Warranty
-              <ul id="specification-individual">
-                <li>
-                  <p className="specification-individual-left">
-                    Warranty Summary
-                  </p>
-                  <p className="specification-individual-right">
-                    1 Year Limited Hardware Warranty, In Home Service After
-                    Remote Diagnosis - Retail
-                  </p>
-                </li>
-                <li>
-                  <p className="specification-individual-left">
-                    Warranty Service Type
-                  </p>
-                  <p className="specification-individual-right">Onsite</p>
-                </li>
-                <li>
-                  <p className="specification-individual-left">
-                    Covered in Warranty
-                  </p>
-                  <p className="specification-individual-right">
-                    Manufacturing Defects
-                  </p>
-                </li>
-                <li>
-                  <p className="specification-individual-left">
-                    Not Covered in Warranty
-                  </p>
-                  <p className="specification-individual-right">
-                    Physical Damage
-                  </p>
-                </li>
-              </ul>
-            </li>
-          </ul>
+          <div className="add-specifications">
+            <div className="add-specifications-item">
+              <input className="add-specifications-item-key" />
+              <input className="add-specifications-item-value" />
+            </div>
+            <div className="add-specifications-item">
+              <input className="add-specifications-item-key" />
+              <input className="add-specifications-item-value" />
+            </div>
+            <div className="add-specifications-item">
+              <input className="add-specifications-item-key" />
+              <input className="add-specifications-item-value" />
+            </div>
+            <div className="add-specifications-item">
+              <input className="add-specifications-item-key" />
+              <input className="add-specifications-item-value" />
+            </div>
+            <div className="add-specifications-item">
+              <input className="add-specifications-item-key" />
+              <input className="add-specifications-item-value" />
+            </div>
+            <div className="add-specifications-item">
+              <input className="add-specifications-item-key" />
+              <input className="add-specifications-item-value" />
+            </div>
+            <div className="add-specifications-item">
+              <input className="add-specifications-item-key" />
+              <input className="add-specifications-item-value" />
+            </div>
+            <div className="add-specifications-item">
+              <input className="add-specifications-item-key" />
+              <input className="add-specifications-item-value" />
+            </div>
+            <div className="add-specifications-item">
+              <input className="add-specifications-item-key" />
+              <input className="add-specifications-item-value" />
+            </div>
+          </div>
         </div>
       </div>
     </div>
   );
-}
+};
 
 export default AddProduct;
