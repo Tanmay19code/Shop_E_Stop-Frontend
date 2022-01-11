@@ -15,9 +15,25 @@ export const loadUser = () => async (dispatch) => {
   if (localStorage.token) {
     setAuthToken(localStorage.token);
   }
+  const state = localStorage.getItem("state");
+  const stateObj = JSON.parse(state);
+  // const authtoken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjFjNDViODhjMTZhYmFkOWUyNmExMmIwIn0sImlhdCI6MTY0MTU3NzI0NH0.d9jZycUi8GkPwizo3Qepf4jadxIItPOmRz9qBY8NtKs"
+  const authtoken = stateObj.auth.token;
+  console.log(authtoken);
+  const body = {};
+  const config = {
+    headers: {
+      "Content-Type": "application/json",
+      authtoken: authtoken,
+    },
+  };
 
   try {
-    const res = await axios.post("http://localhost:5000/api/auth/getuser");
+    const res = await axios.post(
+      "http://localhost:5000/api/auth/getuser",
+      body,
+      config
+    );
 
     dispatch({
       type: USER_LOADED,
@@ -31,42 +47,51 @@ export const loadUser = () => async (dispatch) => {
 };
 
 // Register User
-export const register =
-  ({ name, email, password }) =>
-  async (dispatch) => {
-    const body = JSON.stringify({ name, email, password });
+export const register = (formData, address) => async (dispatch) => {
+  const { name, email, mobile, password, isSeller } = formData;
+  const { line1, line2, city, district, state } = address;
+  const primaryAddress =
+    line1 + "," + line2 + "," + city + "," + district + "," + state;
+  const body = JSON.stringify({
+    name,
+    email,
+    mobile,
+    password,
+    primaryAddress,
+    isSeller,
+  });
 
-    const config = {
-      headers: {
-        "Content-Type": "application/json",
-      },
-    };
-
-    try {
-      const res = await axios.post(
-        "http://localhost:5000/auth/create",
-        body,
-        config
-      );
-
-      dispatch({
-        type: REGISTER_SUCCESS,
-        payload: res.data,
-      });
-
-      // dispatch(loadUser());
-    } catch (error) {
-      // const { errors } = err.response.data;
-
-      // if (errors) {
-      //   errors.forEach((error) => dispatch(setAlert(error.msg, 'danger')));
-      // }
-
-      dispatch({
-        type: REGISTER_FAIL,
-      });
-    }
+  const config = {
+    headers: {
+      "Content-Type": "application/json",
+    },
   };
+
+  try {
+    const res = await axios.post(
+      "http://localhost:5000/api/auth/createuser",
+      body,
+      config
+    );
+
+    dispatch({
+      type: REGISTER_SUCCESS,
+      payload: res.data,
+    });
+
+    // dispatch(loadUser());
+  } catch (error) {
+    // const { errors } = err.response.data;
+
+    // if (errors) {
+    //   errors.forEach((error) => dispatch(setAlert(error.msg, 'danger')));
+    // }
+
+    dispatch({
+      type: REGISTER_FAIL,
+    });
+  }
+};
 
 // Login User
 export const login = (email, password) => async (dispatch) => {
@@ -110,5 +135,7 @@ export const login = (email, password) => async (dispatch) => {
 // Logout / Clear Profile
 
 export const logout = () => (dispatch) => {
+  // localStorage.setItem("state", null);
+  console.log("logged out");
   dispatch({ type: LOGOUT });
 };

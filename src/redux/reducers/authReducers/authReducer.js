@@ -6,8 +6,8 @@ import {
   REGISTER_FAIL,
   REGISTER_SUCCESS,
   USER_LOADED,
-} from '../../constants/authTypes.js';
-import jwtDecode from 'jwt-decode';
+} from "../../constants/authTypes.js";
+import jwtDecode from "jwt-decode";
 
 const initialState = {
   token: null,
@@ -16,8 +16,6 @@ const initialState = {
   auth: null,
   _id: null,
 };
-
-
 
 export default function (state = initialState, action) {
   const { type, payload } = action;
@@ -35,21 +33,22 @@ export default function (state = initialState, action) {
       };
 
     case REGISTER_SUCCESS:
+      // user = jwtDecode(payload?.authtoken);
+      // return {
+      //   ...state,
+      //   ...payload,
+      //   isAuthenticated: true,
+      //   loading: false,
+      //   auth: payload,
+      //   token: payload?.authtoken,
+      //   _id: user !== null && user?._id,
+      // };
+      return { ...state, ...payload };
+    case LOGIN_SUCCESS:
       user = jwtDecode(payload?.authtoken);
       return {
         ...state,
-        ...payload,
-        isAuthenticated: true,
-        loading: false,
-        auth: payload,
-        token: payload?.authtoken,
-        _id: user !== null && user?._id,
-      };
-    case LOGIN_SUCCESS:
-       user = jwtDecode(payload?.authtoken);
-      return {
-        ...state,
-        ...payload,
+        // ...payload,
         isAuthenticated: true,
         loading: false,
         auth: payload,

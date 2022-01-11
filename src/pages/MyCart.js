@@ -10,7 +10,15 @@ function MyCart() {
         <p>My Cart</p>
         <hr />
       </div>
-      <div className="cart-products-holder cart-item-holder">
+
+      <div className="empty-cart">
+        <p>Your Cart is Empty</p>
+        <Link to="/">
+          <input type="button" value="Continue Shopping" />
+        </Link>
+      </div>
+
+      {/* <div className="cart-products-holder cart-item-holder">
         <CartItem />
         <CartItem />
         <CartItem />
@@ -91,7 +99,7 @@ function MyCart() {
             <button className="cart-button2">Proceed ✓</button>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

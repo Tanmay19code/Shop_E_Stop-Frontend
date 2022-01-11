@@ -1,12 +1,16 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import logo from "../images/shop_e_stop_logo.png";
 import { GiShoppingCart } from "react-icons/gi";
 import { AiOutlineUser } from "react-icons/ai";
 import { IoIosSearch } from "react-icons/io";
 import { BiCategory } from "react-icons/bi";
+import { FiLogIn } from "react-icons/fi";
+import { FiLogOut } from "react-icons/fi";
 import { Link } from "react-router-dom";
 import OutsideClickHandler from "react-outside-click-handler";
 import Category from "./Category";
+import { useDispatch } from "react-redux";
+import { logout } from "../redux/actions/authActions.js";
 
 function Navbar() {
   const [menuEnabled, setMenuEnabled] = useState(false);
@@ -22,19 +26,30 @@ function Navbar() {
       setMenuEnabled(false);
     }
   };
+  const dispatch = useDispatch(null);
+  const logout = () => {
+    // useEffect(() => {
+    dispatch(logout())
+      .then((result) => {
+        console.log(result);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+    // }, []);
+  };
 
-  const [categoryVisible, setCategoryVisible] = useState(false)
+  const [categoryVisible, setCategoryVisible] = useState(false);
   const toggleCategory = () => {
     if (categoryVisible) {
-      setCategoryVisible(false)
+      setCategoryVisible(false);
+    } else {
+      setCategoryVisible(true);
     }
-    else{
-      setCategoryVisible(true)
-    }
-  }
+  };
   const disableCategory = () => {
-    setCategoryVisible(false)
-  }
+    setCategoryVisible(false);
+  };
   return (
     <div>
       <div className="navbar">
@@ -45,9 +60,17 @@ function Navbar() {
           {/* <li>
             <BiCategory className="category" onClick={toggleCategory}/>
           </li> */}
+
           <li>
             <Link to="/cart" onClick={disableMenu}>
               <GiShoppingCart className="cart" />
+            </Link>
+          </li>
+          <li>
+            <Link to="/login" onClick={disableMenu}>
+              <FiLogIn className="cart" />
+              {/* <FiLogOut className="cart"/> */}
+              {/* <GiShoppingCart className="cart" /> */}
             </Link>
           </li>
           <li>
@@ -56,17 +79,48 @@ function Navbar() {
         </ul>
 
         <div className="navbar-search">
-          <IoIosSearch className="navbar-search-logo" />
-          <input
-            className="navbar-searchbar"
-            placeholder="Search for products....."
-          />
+          <form>
+            <IoIosSearch className="navbar-search-logo" type="submit" />
+            <input
+              className="navbar-searchbar"
+              placeholder="Search for products....."
+            />
+          </form>
         </div>
         <div
           className={`navbar-profile-menu-${
             menuEnabled ? "enabled" : "disabled"
           }`}
         >
+          {/* <OutsideClickHandler onOutsideClick={disableMenu}>
+            <ul>
+              <li>
+                <div className="navbar-profile-menu-header">
+                  <div>
+                    <ul>
+                      <li id="username">No User</li>
+                      <li id="useremail">Please, Log in to proceed</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <AiOutlineUser
+                      onClick={toggleMenu}
+                      id="menu_user"
+                      className="user"
+                    />
+                  </div>
+                </div>
+              </li>
+              <li>
+                <Link to="/login" onClick={disableMenu}>
+                  <div className="navbar-profile-menu-item">
+                    <p>Login</p>
+                  </div>
+                </Link>
+              </li>
+            </ul>
+          </OutsideClickHandler> */}
+
           <OutsideClickHandler onOutsideClick={disableMenu}>
             <ul>
               <li>
@@ -102,12 +156,17 @@ function Navbar() {
                     <p>My Coupons</p>
                   </div>
                 </Link>
+                <Link to="#" onClick={logout}>
+                  <div className="navbar-profile-menu-item">
+                    <p>Logout</p>
+                  </div>
+                </Link>
               </li>
             </ul>
           </OutsideClickHandler>
         </div>
       </div>
-      {categoryVisible?<Category/>:<></>}
+      {categoryVisible ? <Category /> : <></>}
     </div>
   );
 }

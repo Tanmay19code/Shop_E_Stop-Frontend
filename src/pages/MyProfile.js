@@ -1,9 +1,11 @@
-import React, { useState } from "react";
-import {useSelector} from 'react-redux'
+import React, { useState, useEffect } from "react";
+import { useSelector } from "react-redux";
 import ProfileDetails from "../components/ProfileDetails";
 import { Link } from "react-router-dom";
 import { RiArrowDownSLine } from "react-icons/ri";
 import { RiArrowUpSLine } from "react-icons/ri";
+import { loadUser } from "../redux/actions/authActions.js";
+import { useDispatch } from "react-redux";
 
 function MyProfile() {
   const [disabled, setDisabled] = useState(false);
@@ -18,6 +20,16 @@ function MyProfile() {
       setDisabled(true);
     }
   };
+  const dispatch = useDispatch(null);
+  useEffect(() => {
+    dispatch(loadUser())
+      .then((result) => {
+        console.log(result);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
 
   return (
     <>

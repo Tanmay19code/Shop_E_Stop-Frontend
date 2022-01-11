@@ -1,6 +1,6 @@
 import "./App.css";
 import Navbar from "./components/Navbar";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Homepage from "./pages/Homepage";
 import MyCart from "./pages/MyCart";
 import MyProfile from "./pages/MyProfile";
@@ -12,47 +12,27 @@ import Trial from "./components/Trial";
 import AddProduct from "./pages/AddProduct";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
+import SearchPage from "./pages/SearchPage";
 
 function App() {
   return (
     <>
       <Router>
         <Navbar />
-        <Switch>
-          <Route exact path="/">
-            <Homepage />
-          </Route>
-          <Route exact path="/cart">
-            <MyCart />
-          </Route>
-          <Route exact path="/myprofile">
-            <MyProfile />
-          </Route>
-          <Route exact path="/addaddress">
-            <AddAddress />
-          </Route>
-          <Route exact path="/myorders">
-            <MyOrders />
-          </Route>
-          <Route exact path="/mycoupons">
-            <MyCoupons />
-          </Route>
-          <Route exact path="/product">
-            <ProductPage />
-          </Route>
-          <Route exact path="/trial">
-            <Trial/>
-          </Route>
-          <Route exact path="/addProduct">
-            <AddProduct/>
-          </Route>
-          <Route exact path="/login">
-            <Login/>
-          </Route>
-          <Route exact path="/signup">
-            <Signup/>
-          </Route>
-        </Switch>
+        <Routes>
+          <Route exact path="/" element={<Homepage />} />
+          <Route exact path="/searchresult" element={<SearchPage />} />
+          <Route exact path="/cart" element={<MyCart />} />
+          <Route exact path="/myprofile" element={<MyProfile />} />
+          <Route exact path="/addaddress" element={<AddAddress />} />
+          <Route exact path="/myorders" element={<MyOrders />} />
+          <Route exact path="/mycoupons" element={<MyCoupons />} />
+          <Route exact path="/product" element={<ProductPage />} />
+          <Route exact path="/addProduct" element={<AddProduct />} />
+          <Route exact path="/login" element={<Login />} />
+          <Route exact path="/signup" element={<Signup />} />
+          <Route exact path="/trial" element={<Trial />} />
+        </Routes>
       </Router>
     </>
   );

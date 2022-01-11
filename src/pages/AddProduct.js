@@ -130,6 +130,27 @@ const AddProduct = () => {
               <input className="add-specifications-item-key" />
               <input className="add-specifications-item-value" />
             </div>
+            <div className="add-specifications-item">
+              <input className="add-specifications-item-key" />
+              <input className="add-specifications-item-value" />
+            </div>
+            <div className="add-specifications-item">
+              <input className="add-specifications-item-key" />
+              <input className="add-specifications-item-value" />
+            </div>
+            <div className="add-specifications-item">
+              <input className="add-specifications-item-key" />
+              <input className="add-specifications-item-value" />
+            </div>
+            <div className="add-specifications-item">
+              <input className="add-specifications-item-key" />
+              <input className="add-specifications-item-value" />
+            </div>
+            <div className="add-specifications-item">
+              <input className="add-specifications-item-key" />
+              <input className="add-specifications-item-value" />
+            </div>
+            {/* <input className="add-specifications-button" type="button" value="+"></input> */}
           </div>
         </div>
       </div>
