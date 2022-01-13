@@ -616,36 +616,40 @@ MY CART
 
 .search-item-rating {
     background-color: #E5E5E5;
-    padding:5px 8px 5px 8px;
-    border-radius:20px;
+    padding: 5px 8px 5px 8px;
+    border-radius: 20px;
     display: flex;
     font-size: 30px;
     font-family: 'Arapey', serif;
     position: absolute;
     right: 20px;
-        /* justify-self: flex-end; */
-        /* font-weight: 700; */
+    /* justify-self: flex-end; */
+    /* font-weight: 700; */
 }
-.search-item-rating svg{
+
+.search-item-rating svg {
     color: #FFD700;
     width: 20px;
     height: 20px;
-    margin-top:8px;
+    margin-top: 8px;
     margin-left: 5px;
 }
-.search-item-price p{
+
+.search-item-price p {
     font-family: 'Kreon', serif;
     font-size: 27px;
     margin-top: 20px;
     font-weight: bold;
 }
-.search-item-description p{
+
+.search-item-description p {
     font-family: 'Kreon', serif;
     font-size: 20px;
     margin-top: 15px;
     margin-bottom: 15px;
 }
-.search-item-highlights{
+
+.search-item-highlights {
     margin-left: 30px;
 }
 
@@ -1389,6 +1393,15 @@ LOGIN / SIGNUP
 
 .add-specifications-button:hover {
     cursor: pointer;
+}
+
+.add-product-submit-button {
+    margin-bottom: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    border-radius : 10px;
 }
 
 /**********************************/

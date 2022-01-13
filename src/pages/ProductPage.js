@@ -1,33 +1,67 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import laptop from "../images/laptop1.jpg";
 import { AiFillStar } from "react-icons/ai";
+import { useDispatch } from "react-redux";
+import { getProduct } from "../redux/actions/productActions.js";
+import throttle from "lodash.throttle";
 
-function ProductPage() {
+const ProductPage = (props) => {
+  let state;
+  const dispatch = useDispatch(null);
+  const [product, setProduct] = useState({});
+
+  useEffect(() => {
+    dispatch(getProduct(props.productId))
+      .then(() => {
+        state = JSON.parse(localStorage.getItem("state"));
+
+        throttle(() => {
+          setProduct(state.product.fetchedProduct);
+        }, 1000);
+
+        // setProduct(state.product.fetchedProduct);
+      })
+      .catch((error) => {
+        console.log(error.message);
+      });
+  }, []);
+  console.log("Product fetched=>", product);
   return (
     <div className="page-container product-container">
       <div className="product-container-left">
         <div className="product-header">
           <div className="product-image-div">
             <img src={laptop} alt="speaker" />
-            <p className ="product-image-price mobile-display">₹65,000</p>
+            <p className="product-image-price mobile-display">
+              {`₹` + product.price}
+            </p>
           </div>
           <div className="product-info">
             <div className="product-title">
-              <p id="product-info-heading">Dell Inspiron 352</p>
-              <div className="rating">
+              <p id="product-info-heading">{product.name}</p>
+              {product.ranking && (
+                <div className="rating">
+                  <AiFillStar />
+                  <p>{product.ranking}</p>
+                </div>
+              )}
+              {/* <div className="rating">
                 <AiFillStar />
-                <p>4.2</p>
-              </div>
+                <p></p>
+              </div> */}
             </div>
             <div className="product-title-description mobile-display">
               <ul>
-                <li>Core i3 10th Gen</li>
+                {/* <li>Core i3 10th Gen</li>
                 <li>8 GB/1 TB HDD</li>
                 <li>Windows 10 Home</li>
-                <li>15.6 inch, Black, With MS Office</li>
+                <li>15.6 inch, Black, With MS Office</li> */}
+                <li>{product.description}</li>
               </ul>
             </div>
-            <p className ="product-image-price laptop-display">₹65,000</p>
+            <p className="product-image-price laptop-display">
+              {`₹` + product.price}
+            </p>
             <div className="product-title-buttons">
               <button id="add-to-cart-button">Add to Cart</button>
               <button id="buy-button">Buy Now</button>
@@ -38,16 +72,18 @@ function ProductPage() {
       <div className="product-container-right">
         <div className="product-title-description laptop-display">
           <ul>
-            <li>Core i3 10th Gen</li>
+            {/* <li>Core i3 10th Gen</li>
             <li>8 GB/1 TB HDD</li>
             <li>Windows 10 Home</li>
-            <li>15.6 inch, Black, With MS Office</li>
+            <li>15.6 inch, Black, With MS Office</li> */}
+            <li>{product.description}</li>
           </ul>
         </div>
         <div className="product-expected-delivery">
           <hr />
           <p id="product-details-header">Expected Delivery :</p>
           <p id="product-details-delivery">
+            {props.productId}
             Delivery expected by <strong>Tue, 10th Aug</strong>
           </p>
           <p id="product-details-delivery">Delivery Charges: ₹100</p>
@@ -56,10 +92,14 @@ function ProductPage() {
           <hr />
           <p id="product-details-header">Highlights :</p>
           <ul>
-            <li>Pre-installed Genuine Windows 10 OS</li>
+            {/* <li>Pre-installed Genuine Windows 10 OS</li>
             <li>Preloaded with MS Office</li>
             <li>Light Laptop without Optical Disk Drive</li>
-            <li>15.6 inch</li>
+            <li>15.6 inch</li> */}
+            {
+              product.highlights.map((item) => {
+                return <li>{item}</li>;
+              })}
           </ul>
         </div>
         <div className="product-details-specifications">
@@ -225,16 +265,19 @@ function ProductPage() {
             </li>
             <li>
               Additional Features
-              <div className="product-details-description" id="additionalFeatures">
-              <ul  >
-                <li>
-                  {/* <p className="specification-individual-left">Disk Drive</p>
+              <div
+                className="product-details-description"
+                id="additionalFeatures"
+              >
+                <ul>
+                  <li>
+                    {/* <p className="specification-individual-left">Disk Drive</p>
                   <p className="specification-individual-right">
                     Not Available
                   </p> */}
-                  Disk Drive not available 
-                </li>
-              </ul>
+                    Disk Drive not available
+                  </li>
+                </ul>
               </div>
             </li>
             <li>
@@ -278,6 +321,6 @@ function ProductPage() {
       </div>
     </div>
   );
-}
+};
 
 export default ProductPage;

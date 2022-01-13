@@ -1,4 +1,5 @@
 import "./App.css";
+import { useState, useEffect } from "react";
 import Navbar from "./components/Navbar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Homepage from "./pages/Homepage";
@@ -14,7 +15,12 @@ import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import SearchPage from "./pages/SearchPage";
 
-function App() {
+const App = () => {
+  const [selectedProduct, setSelectedProduct] = useState("");
+  useEffect(() => {
+    setSelectedProduct(localStorage.getItem("selectedProduct"));
+  }, [localStorage.getItem("selectedProduct")]);
+
   return (
     <>
       <Router>
@@ -27,7 +33,11 @@ function App() {
           <Route exact path="/addaddress" element={<AddAddress />} />
           <Route exact path="/myorders" element={<MyOrders />} />
           <Route exact path="/mycoupons" element={<MyCoupons />} />
-          <Route exact path="/product" element={<ProductPage />} />
+          <Route
+            exact
+            path={`/product/${selectedProduct}`}
+            element={<ProductPage productId={selectedProduct}/>}
+          />
           <Route exact path="/addProduct" element={<AddProduct />} />
           <Route exact path="/login" element={<Login />} />
           <Route exact path="/signup" element={<Signup />} />
@@ -36,6 +46,6 @@ function App() {
       </Router>
     </>
   );
-}
+};
 
 export default App;
