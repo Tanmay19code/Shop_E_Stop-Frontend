@@ -3,7 +3,7 @@ import logo from "../images/shop_e_stop_logo_2.png";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
-import { login } from "../redux/actions/authActions.js";
+import { login,loadUser } from "../redux/actions/authActions.js";
 import { Redirect } from "react-router";
 import refreshTokenSetup from "../redux/utils/refreshToken.js";
 
@@ -25,7 +25,9 @@ const Login = () => {
       setTimeout(() => {
         window.location.reload(false);
       }, 3);
+      dispatch(loadUser());
     });
+
   };
 
   return (

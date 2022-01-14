@@ -6,14 +6,19 @@ import { IoIosSearch } from "react-icons/io";
 import { BiCategory } from "react-icons/bi";
 import { FiLogIn } from "react-icons/fi";
 import { FiLogOut } from "react-icons/fi";
-import { Link } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
 import OutsideClickHandler from "react-outside-click-handler";
 import Category from "./Category";
 import { useDispatch } from "react-redux";
-import { logout } from "../redux/actions/authActions.js";
+import { loadUser, logout } from "../redux/actions/authActions.js";
+import { useNavigate } from "react-router-dom";
 
 function Navbar() {
+  let state;
   const [menuEnabled, setMenuEnabled] = useState(false);
+
+  const navigate = useNavigate();
+
   const toggleMenu = () => {
     if (menuEnabled) {
       setMenuEnabled(false);
@@ -27,11 +32,30 @@ function Navbar() {
     }
   };
   const dispatch = useDispatch(null);
-  const logout = () => {
+  // let user = undefined;
+  const [user, setUser] = useState(undefined);
+
+  useEffect(() => {
+    dispatch(loadUser())
+      .then((result) => {
+        state = JSON.parse(localStorage.getItem("state"));
+        setUser(state.auth.userDetail);
+      })
+      .catch((error) => {
+        console.error(error.message);
+      });
+  }, []);
+  console.log("USER=>", user);
+
+  const logoutBtn = () => {
     // useEffect(() => {
     dispatch(logout())
       .then((result) => {
         console.log(result);
+        navigate("/");
+        setTimeout(() => {
+          window.location.reload(false);
+        }, 3);
       })
       .catch((err) => {
         console.log(err);
@@ -67,11 +91,15 @@ function Navbar() {
             </Link>
           </li>
           <li>
-            <Link to="/login" onClick={disableMenu}>
-              <FiLogIn className="cart" />
-              {/* <FiLogOut className="cart"/> */}
-              {/* <GiShoppingCart className="cart" /> */}
-            </Link>
+            {user && user.name ? (
+              <Link to="#" onClick={logoutBtn}>
+                <FiLogOut className="cart" />
+              </Link>
+            ) : (
+              <Link to="/login" onClick={disableMenu}>
+                <FiLogIn className="cart" />
+              </Link>
+            )}
           </li>
           <li>
             <AiOutlineUser onClick={toggleMenu} className="user" />
@@ -92,61 +120,35 @@ function Navbar() {
             menuEnabled ? "enabled" : "disabled"
           }`}
         >
-          {/* <OutsideClickHandler onOutsideClick={disableMenu}>
-            <ul>
-              <li>
-                <div className="navbar-profile-menu-header">
-                  <div>
-                    <ul>
-                      <li id="username">No User</li>
-                      <li id="useremail">Please, Log in to proceed</li>
-                    </ul>
+          {user && user.name ? (
+            <OutsideClickHandler onOutsideClick={disableMenu}>
+              <ul>
+                <li>
+                  <div className="navbar-profile-menu-header">
+                    <div>
+                      <ul>
+                        <li id="username">
+                          {user.name && user.name.split(" ")[0]}
+                        </li>
+                        <li id="useremail">{user.email}</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <AiOutlineUser
+                        onClick={toggleMenu}
+                        id="menu_user"
+                        className="user"
+                      />
+                    </div>
                   </div>
-                  <div>
-                    <AiOutlineUser
-                      onClick={toggleMenu}
-                      id="menu_user"
-                      className="user"
-                    />
-                  </div>
-                </div>
-              </li>
-              <li>
-                <Link to="/login" onClick={disableMenu}>
-                  <div className="navbar-profile-menu-item">
-                    <p>Login</p>
-                  </div>
-                </Link>
-              </li>
-            </ul>
-          </OutsideClickHandler> */}
-
-          <OutsideClickHandler onOutsideClick={disableMenu}>
-            <ul>
-              <li>
-                <div className="navbar-profile-menu-header">
-                  <div>
-                    <ul>
-                      <li id="username">Tanmay M.</li>
-                      <li id="useremail">tanmaymutalik2002@gmail.com</li>
-                    </ul>
-                  </div>
-                  <div>
-                    <AiOutlineUser
-                      onClick={toggleMenu}
-                      id="menu_user"
-                      className="user"
-                    />
-                  </div>
-                </div>
-              </li>
-              <li>
-                <Link to="myprofile" onClick={disableMenu}>
+                </li>
+                <li>
+                  {/* <Link to="myprofile" onClick={disableMenu}>
                   <div className="navbar-profile-menu-item">
                     <p>My Profile</p>
                   </div>
-                </Link>
-                <Link to="myorders" onClick={disableMenu}>
+                </Link> */}
+                  {/* <Link to="myorders" onClick={disableMenu}>
                   <div className="navbar-profile-menu-item">
                     <p>My Orders</p>
                   </div>
@@ -155,15 +157,45 @@ function Navbar() {
                   <div className="navbar-profile-menu-item">
                     <p>My Coupons</p>
                   </div>
-                </Link>
-                <Link to="#" onClick={logout}>
-                  <div className="navbar-profile-menu-item">
-                    <p>Logout</p>
+                </Link> */}
+                  <Link to="#" onClick={logoutBtn}>
+                    <div className="navbar-profile-menu-item">
+                      <p>Logout</p>
+                    </div>
+                  </Link>
+                </li>
+              </ul>
+            </OutsideClickHandler>
+          ) : (
+            <OutsideClickHandler onOutsideClick={disableMenu}>
+              <ul>
+                <li>
+                  <div className="navbar-profile-menu-header">
+                    <div>
+                      <ul>
+                        <li id="username">No User</li>
+                        <li id="useremail">Please, Log in to proceed</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <AiOutlineUser
+                        onClick={toggleMenu}
+                        id="menu_user"
+                        className="user"
+                      />
+                    </div>
                   </div>
-                </Link>
-              </li>
-            </ul>
-          </OutsideClickHandler>
+                </li>
+                <li>
+                  <Link to="/login" onClick={disableMenu}>
+                    <div className="navbar-profile-menu-item">
+                      <p>Login</p>
+                    </div>
+                  </Link>
+                </li>
+              </ul>
+            </OutsideClickHandler>
+          )}
         </div>
       </div>
       {categoryVisible ? <Category /> : <></>}

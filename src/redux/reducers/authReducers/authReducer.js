@@ -10,6 +10,7 @@ import {
 import jwtDecode from "jwt-decode";
 
 const initialState = {
+  userDetail: {},
   token: null,
   isAuthenticated: null,
   loading: true,
@@ -19,17 +20,21 @@ const initialState = {
 
 export default function (state = initialState, action) {
   const { type, payload } = action;
+  let user
 
   switch (type) {
     case USER_LOADED:
-      var user = jwtDecode(payload?.authtoken);
+      
+      // user = jwtDecode(payload?.authtoken);
+      console.log("USER_LOADED=>",payload);
       return {
         ...state,
-        isAuthenticated: true,
-        loading: false,
-        auth: payload,
-        token: payload?.authtoken,
-        _id: user !== null && user?._id,
+        userDetail: payload,
+        // isAuthenticated: true,
+        // loading: false,
+        // auth: payload,
+        // token: payload?.authtoken,
+        // _id: user !== null && user?._id,
       };
 
     case REGISTER_SUCCESS:
@@ -69,6 +74,7 @@ export default function (state = initialState, action) {
         auth: null,
         token: null,
         _id: null,
+        userDetail: null
       };
     default:
       return state;

@@ -1008,7 +1008,11 @@ Product Page
     background-color: #fff82cba;
     border: 1px solid #000;
     border-radius: 3px;
-    padding: 1px;
+    padding: 5px;
+}
+
+#add-to-cart-button:hover {
+    cursor: pointer;
 }
 
 #buy-button {
@@ -1046,7 +1050,7 @@ Product Page
     margin: 0 0 0 25px;
     margin-top: 15px;
     margin-bottom: 10px;
-    list-style: square;
+    list-style: none;
 }
 
 #product-specification-ul li {
@@ -1057,6 +1061,7 @@ Product Page
 #specification-individual li {
     display: flex;
     margin: 10px 0 0 0;
+    list-style: square;
 }
 
 .specification-individual-left {
@@ -1401,7 +1406,7 @@ LOGIN / SIGNUP
     margin-left: auto;
     margin-right: auto;
     padding: 15px;
-    border-radius : 10px;
+    border-radius: 10px;
 }
 
 /**********************************/

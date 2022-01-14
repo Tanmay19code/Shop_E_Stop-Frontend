@@ -23,13 +23,13 @@ const Signup = () => {
 
   const dispatch = useDispatch(null);
   const navigate = useNavigate();
-  const onSubmit = async () => {
-    // e.preventDefault();
+  const onSubmit = async (e) => {
+    e.preventDefault();
     dispatch(register(formData, primaryAddress)).then(() => {
       navigate("/login");
-      // setTimeout(() => {
-      //   window.location.reload(false);
-      // }, 3);
+      setTimeout(() => {
+        window.location.reload(false);
+      }, 3);
     });
   };
 
@@ -46,7 +46,7 @@ const Signup = () => {
     <div className="page-container">
       <div className="form-container-signup">
         <form method="POST"
-          // onSubmit={(e) => onSubmit(e)}
+          onSubmit={(e) => onSubmit(e)}
         >
           <img src={logo} alt="Logo" className="form-logo" />
           <div className="form-body">
@@ -138,12 +138,12 @@ const Signup = () => {
             </div>
           </div>
           <input
-            // type="submit"
-            type="button"
+            type="submit"
+            // type="button"
             value="SIGNUP"
             id="signup-button"
             className="signup-button-class"
-            onCLick = {onSubmit}
+            // onCLick = {onSubmit}
           />
           <Link to="/login" className="create-account-button-link">
             <p className="create-account-button">Already Registered? Login</p>

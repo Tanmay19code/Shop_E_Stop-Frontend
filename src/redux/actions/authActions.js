@@ -19,7 +19,7 @@ export const loadUser = () => async (dispatch) => {
   const stateObj = JSON.parse(state);
   // const authtoken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjFjNDViODhjMTZhYmFkOWUyNmExMmIwIn0sImlhdCI6MTY0MTU3NzI0NH0.d9jZycUi8GkPwizo3Qepf4jadxIItPOmRz9qBY8NtKs"
   const authtoken = stateObj.auth.token;
-  console.log(authtoken);
+  // console.log(authtoken);
   const body = {};
   const config = {
     headers: {
@@ -34,7 +34,7 @@ export const loadUser = () => async (dispatch) => {
       body,
       config
     );
-
+    console.log("RES=>", res.data);
     dispatch({
       type: USER_LOADED,
       payload: res.data,
